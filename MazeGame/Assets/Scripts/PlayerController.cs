@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour {
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 
 		rb.AddForce(movement * speed);
+		if (Input.GetKey(KeyCode.Escape)) { Application.Quit();
+		}
 	}
 
 	void OnTriggerEnter (Collider other) {
@@ -25,4 +27,6 @@ public class PlayerController : MonoBehaviour {
 		}
 
 	}
+
+	
 }
