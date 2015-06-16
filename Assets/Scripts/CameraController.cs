@@ -3,17 +3,26 @@ using System.Collections;
 
 public class CameraController : MonoBehaviour {
 
-	public GameObject player;
+	public Transform player;
 
+	public float rotMag;
 	private Vector3 offset;
+	//private Vector3 deltaPos;
+	private Vector3 playerLastPos;
+
+
+
 
 	// Use this for initialization
 	void Start () {
-		offset = transform.position - player.transform.position;
+		offset = transform.localPosition - player.position; 
 	}
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		transform.position = player.transform.position + offset;
+		//float moveHorizontal = Input.GetAxis ("Horizontal");
+		transform.position = player.localPosition + offset;
+		//transform.RotateAround(player.position,player.up, rotMag*moveHorizontal);
+		//playerLastPos = player.position;
 	}
 }

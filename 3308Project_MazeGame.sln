@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{7CFB59E3-E866-D183-799D-1B687222372D}") = "3308Project_MazeGame", "Assembly-CSharp.csproj", "{B1D911F2-82A9-2E43-EE91-F2EA14902329}"
 EndProject
-Project("{7CFB59E3-E866-D183-799D-1B687222372D}") = "3308Project_MazeGame", "Assembly-UnityScript.unityproj", "{8E5F1218-476A-F62A-E79A-17A8B556BDD2}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,15 +13,11 @@ Global
 		{B1D911F2-82A9-2E43-EE91-F2EA14902329}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1D911F2-82A9-2E43-EE91-F2EA14902329}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1D911F2-82A9-2E43-EE91-F2EA14902329}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8E5F1218-476A-F62A-E79A-17A8B556BDD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8E5F1218-476A-F62A-E79A-17A8B556BDD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8E5F1218-476A-F62A-E79A-17A8B556BDD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8E5F1218-476A-F62A-E79A-17A8B556BDD2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-				GlobalSection(MonoDevelopProperties) = preSolution
+		GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -35,10 +29,9 @@ Global
 		$2.scope = text/x-csharp
 		$0.TextStylePolicy = $3
 		$3.FileWidth = 120
-		$3.TabWidth = 4
-		$3.IndentWidth = 4
+		$3.TabsToSpaces = False
 		$3.EolMarker = Unix
-		$3.inheritsSet = Mono
+		$3.inheritsSet = VisualStudio
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
