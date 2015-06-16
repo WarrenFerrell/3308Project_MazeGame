@@ -243,6 +243,7 @@ GameObject:
   - 23: {fileID: 1505748281}
   - 102: {fileID: 1505748280}
   - 65: {fileID: 1505748284}
+  - 114: {fileID: 1505748283}
   m_Layer: 0
   m_Name: Quit Game
   m_TagString: Untagged
@@ -307,6 +308,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &1505748283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505748279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ba118dab0c63a4db5370eddb69361c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuit: 0
 --- !u!65 &1505748284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -480,6 +493,7 @@ GameObject:
   - 23: {fileID: 1737107897}
   - 102: {fileID: 1737107896}
   - 65: {fileID: 1737107900}
+  - 114: {fileID: 1737107899}
   m_Layer: 0
   m_Name: Start Game
   m_TagString: Untagged
@@ -544,6 +558,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1737107899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1737107895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ba118dab0c63a4db5370eddb69361c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuit: 0
 --- !u!65 &1737107900
 BoxCollider:
   m_ObjectHideFlags: 0
