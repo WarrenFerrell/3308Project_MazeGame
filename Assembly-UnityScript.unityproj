@@ -64,14 +64,14 @@
  <Reference Include="UnityEngine.Analytics">
  <HintPath>D:/Program Files (x86)/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
- <Reference Include="Poly2Tri">
- <HintPath>C:/Users/HAF Cooler Master/Dropbox/3308/Project3/3308Project_MazeGame/Assets/Plugins/Poly2Tri.dll</HintPath>
- </Reference>
  <Reference Include="clipper_library">
  <HintPath>C:/Users/HAF Cooler Master/Dropbox/3308/Project3/3308Project_MazeGame/Assets/Plugins/clipper_library.dll</HintPath>
  </Reference>
  <Reference Include="GameDraw">
  <HintPath>C:/Users/HAF Cooler Master/Dropbox/3308/Project3/3308Project_MazeGame/Assets/Plugins/GameDraw.dll</HintPath>
+ </Reference>
+ <Reference Include="Poly2Tri">
+ <HintPath>C:/Users/HAF Cooler Master/Dropbox/3308/Project3/3308Project_MazeGame/Assets/Plugins/Poly2Tri.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Program Files (x86)/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
