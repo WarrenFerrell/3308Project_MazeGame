@@ -665,7 +665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cdd0479fe15bb48a4fb1d92371b51d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenuSceneName: 
+  mainMenuSceneName: MainMenu
   pauseMenuFont: {fileID: 0}
 --- !u!1 &934969463
 GameObject:
@@ -1340,7 +1340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c7e17d47f01f94592e00de173800ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
 --- !u!1001 &1315546421
 Prefab:
   m_ObjectHideFlags: 0
@@ -1691,7 +1690,6 @@ GameObject:
   - 92: {fileID: 1983388445}
   - 124: {fileID: 1983388444}
   - 81: {fileID: 1983388443}
-  - 114: {fileID: 1983388448}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1765,18 +1763,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &1983388448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1983388442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52919157ad07f49439f75cd3a9a6bee5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1298981254}
 --- !u!1001 &2048109017
 Prefab:
   m_ObjectHideFlags: 0
