@@ -106,7 +106,7 @@ Transform:
   m_GameObject: {fileID: 178626}
   m_LocalRotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.00999999, y: 1.00999999, z: 1.00999999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 471790}
   - {fileID: 425802}
@@ -276,35 +276,35 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111496}
-  m_Mesh: {fileID: 4300004, guid: de372b0b83edd204b8f5cba82aaaed62, type: 3}
+  m_Mesh: {fileID: 4300004, guid: e70bb3056738b4e4a90b4cbe02a03318, type: 3}
 --- !u!33 &3331294
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112032}
-  m_Mesh: {fileID: 4300008, guid: de372b0b83edd204b8f5cba82aaaed62, type: 3}
+  m_Mesh: {fileID: 4300008, guid: e70bb3056738b4e4a90b4cbe02a03318, type: 3}
 --- !u!33 &3348606
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 173336}
-  m_Mesh: {fileID: 4300006, guid: de372b0b83edd204b8f5cba82aaaed62, type: 3}
+  m_Mesh: {fileID: 4300006, guid: e70bb3056738b4e4a90b4cbe02a03318, type: 3}
 --- !u!33 &3353062
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178626}
-  m_Mesh: {fileID: 4300000, guid: de372b0b83edd204b8f5cba82aaaed62, type: 3}
+  m_Mesh: {fileID: 4300000, guid: e70bb3056738b4e4a90b4cbe02a03318, type: 3}
 --- !u!33 &3382776
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 161954}
-  m_Mesh: {fileID: 4300002, guid: de372b0b83edd204b8f5cba82aaaed62, type: 3}
+  m_Mesh: {fileID: 4300002, guid: e70bb3056738b4e4a90b4cbe02a03318, type: 3}
 --- !u!95 &9524310
 Animator:
   serializedVersion: 3
@@ -313,7 +313,7 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178626}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: de372b0b83edd204b8f5cba82aaaed62, type: 3}
+  m_Avatar: {fileID: 9000000, guid: e70bb3056738b4e4a90b4cbe02a03318, type: 3}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
