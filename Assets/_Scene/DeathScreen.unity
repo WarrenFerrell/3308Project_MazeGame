@@ -230,8 +230,9 @@ GameObject:
   - 4: {fileID: 1655818885}
   - 23: {fileID: 1655818884}
   - 102: {fileID: 1655818883}
+  - 114: {fileID: 1655818886}
   m_Layer: 0
-  m_Name: New Text
+  m_Name: Death Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -294,6 +295,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &1655818886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1655818882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa49de47a54f414e930cb78ba924aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1753999799
 GameObject:
   m_ObjectHideFlags: 0
