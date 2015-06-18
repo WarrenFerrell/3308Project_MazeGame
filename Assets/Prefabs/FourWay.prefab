@@ -79,6 +79,7 @@ GameObject:
   - 33: {fileID: 3386608}
   - 23: {fileID: 2306382}
   - 95: {fileID: 9580420}
+  - 64: {fileID: 6495470}
   m_Layer: 0
   m_Name: FourWay
   m_TagString: Untagged
@@ -427,6 +428,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139418}
   m_Mesh: {fileID: 4300010, guid: 29c3859612a826640bbb514c937ecdff, type: 3}
+--- !u!64 &6495470
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 29c3859612a826640bbb514c937ecdff, type: 3}
 --- !u!95 &9580420
 Animator:
   serializedVersion: 3
