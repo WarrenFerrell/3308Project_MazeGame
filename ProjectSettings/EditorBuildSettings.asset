@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/_Scene/MainMenu.unity
   - enabled: 1
     path: Assets/_Scene/Minigame.unity
+  - enabled: 1
+    path: Assets/_Scene/StaticMaze.unity
