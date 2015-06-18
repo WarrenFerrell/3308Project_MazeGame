@@ -45,6 +45,7 @@ GameObject:
   - 33: {fileID: 3349994}
   - 23: {fileID: 2338670}
   - 95: {fileID: 9517298}
+  - 64: {fileID: 6483722}
   m_Layer: 0
   m_Name: TWay
   m_TagString: Untagged
@@ -672,6 +673,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 158868}
   m_Mesh: {fileID: 4300004, guid: d0898bf5d01347243a2814896bfefa34, type: 3}
+--- !u!64 &6483722
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: d0898bf5d01347243a2814896bfefa34, type: 3}
 --- !u!95 &9517298
 Animator:
   serializedVersion: 3
