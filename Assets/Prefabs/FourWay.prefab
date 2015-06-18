@@ -80,6 +80,10 @@ GameObject:
   - 23: {fileID: 2306382}
   - 95: {fileID: 9580420}
   - 64: {fileID: 6495470}
+  - 65: {fileID: 6546878}
+  - 65: {fileID: 6538228}
+  - 65: {fileID: 6540360}
+  - 65: {fileID: 6581504}
   m_Layer: 0
   m_Name: FourWay
   m_TagString: Untagged
@@ -440,6 +444,54 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 29c3859612a826640bbb514c937ecdff, type: 3}
+--- !u!65 &6538228
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6500001, y: 3.6500001, z: 5}
+  m_Center: {x: -3.25, y: 3.25, z: 2.50000048}
+--- !u!65 &6540360
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6500001, y: 3.6500001, z: 5}
+  m_Center: {x: 3.25, y: -3.25, z: 2.50000048}
+--- !u!65 &6546878
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6500001, y: 3.6500001, z: 5}
+  m_Center: {x: 3.25, y: 3.25, z: 2.50000048}
+--- !u!65 &6581504
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167364}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6500001, y: 3.6500001, z: 5}
+  m_Center: {x: -3.25, y: -3.25, z: 2.50000048}
 --- !u!95 &9580420
 Animator:
   serializedVersion: 3

@@ -80,6 +80,8 @@ GameObject:
   - 23: {fileID: 2341576}
   - 95: {fileID: 9524310}
   - 64: {fileID: 6456554}
+  - 65: {fileID: 6563650}
+  - 65: {fileID: 6563828}
   m_Layer: 0
   m_Name: StraightWay
   m_TagString: Untagged
@@ -318,6 +320,30 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: e70bb3056738b4e4a90b4cbe02a03318, type: 3}
+--- !u!65 &6563650
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3.6500001, z: 5}
+  m_Center: {x: 0, y: -3.25, z: 2.50000048}
+--- !u!65 &6563828
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 178626}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3.6500001, z: 5}
+  m_Center: {x: 0, y: 3.25, z: 2.50000048}
 --- !u!95 &9524310
 Animator:
   serializedVersion: 3
