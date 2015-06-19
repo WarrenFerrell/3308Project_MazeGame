@@ -746,7 +746,7 @@ MeshCollider:
   m_GameObject: {fileID: 165198}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 75287ab94db81364c8435c48b7ee9a13, type: 3}
@@ -869,6 +869,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Size.x
       value: 3.6500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
