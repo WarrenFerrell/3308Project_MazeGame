@@ -6,7 +6,8 @@ public class enemyTestTwo : MonoBehaviour {
 	//PlayerHealth playerHealth;
 	//EnemyHealth enemyHealth;
 	NavMeshAgent nav;
-	string collidingWith;
+	GameObject collidingWith;
+	string areYouTheCat;
 	public string goingToString;
 	GameObject destination;
 	public GameObject destination2;
@@ -24,12 +25,19 @@ public class enemyTestTwo : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision)
 	{
-		collidingWith = collision.gameObject.name;
-		if (collidingWith == "Dark_Cat")
+		areYouTheCat = collision.gameObject.name;
+		if (areYouTheCat == "Dark_Cat")
 		
 			{Application.LoadLevel("MainMenu");}
 	}
 	//receives argument from waypoint upon collision, determining next destination)
+	void OnTriggerEnter(Collider collision)
+	{
+		collidingWith = collision.gameObject;
+		collidingWith.SendMessage("previousDestination",destination2);
+
+	}
+
 
 	void nextDestination (GameObject destination)
 	{
