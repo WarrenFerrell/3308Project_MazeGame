@@ -36,12 +36,12 @@
  
  function OnGUI() 
  {
-     var text : String = String.Format( "{0:00}:{1:00}", parseInt( theTimer / 60.0 ), parseInt( theTimer % 60.0 ) ); 
+     var text : String = String.Format( "{1:00}", parseInt( theTimer / 60.0 ), parseInt( theTimer % 60.0 ) ); 
  
      if (showRemaining)
      {
      	GUI.skin.font = MyFont;
-         GUI.Label( Rect( 375, 400, Screen.width - 40, 60), text );
+         GUI.Label( Rect( 725, 340, Screen.width - 40, 60), text );
      }
  }
  
