@@ -84,7 +84,6 @@ GameObject:
   - 65: {fileID: 6538228}
   - 65: {fileID: 6540360}
   - 65: {fileID: 6581504}
-  - 135: {fileID: 13525478}
   m_Layer: 0
   m_Name: FourWay
   m_TagString: Untagged
@@ -510,18 +509,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!135 &13525478
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 167364}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
