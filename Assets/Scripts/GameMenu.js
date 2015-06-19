@@ -18,7 +18,7 @@ Application.Quit();
 }
 else {
 //load level
-Application.LoadLevel("StaticMaze");
+Application.LoadLevel("Minigame");
 }
 }
 
