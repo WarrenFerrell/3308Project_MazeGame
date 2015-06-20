@@ -83,7 +83,6 @@ GameObject:
   - 64: {fileID: 6464226}
   - 65: {fileID: 6524366}
   - 65: {fileID: 6537248}
-  - 135: {fileID: 13598112}
   m_Layer: 0
   m_Name: SloppyWay (2)
   m_TagString: Untagged
@@ -169,6 +168,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 482396}
+  - 135: {fileID: 13552796}
   m_Layer: 0
   m_Name: TurnMazeParent
   m_TagString: Untagged
@@ -1007,18 +1007,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuSceneName: MainMenu
   pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
---- !u!135 &13598112
+--- !u!135 &13552796
 SphereCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142808}
+  m_GameObject: {fileID: 165198}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: .25, z: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -1060,7 +1060,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Center.y
-      value: 0
+      value: .25
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Center.x
