@@ -5,6 +5,7 @@
 //*******************************************************************************
 var mainMenuSceneName : String;
 var pauseMenuFont : Font;
+var AudioFile:AudioClip;
 private var pauseEnabled = false;			
 
 function Start(){
@@ -21,6 +22,7 @@ function Update(){
 	
 		//check if game is already paused		
 		if(pauseEnabled == true){
+		
 			//unpause the game
 			pauseEnabled = false;
 			Time.timeScale = 1;
@@ -47,26 +49,36 @@ GUI.skin.button.font = pauseMenuFont;
 
 	if(pauseEnabled == true){
 		
+		
 		//Make a background box
 		GUI.Box(Rect(Screen.width /2 - 100,Screen.height /2 - 100,250,200), "Pause Menu");
 		
 		//Make Main Menu button
 		if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2,250,50), "Main Menu")){
+			GetComponent.<AudioSource>().clip = AudioFile;
 			Application.LoadLevel(mainMenuSceneName);
+			
+			
 		}
 		
 
 		//Make quit game button
 		if (GUI.Button (Rect (Screen.width /2 - 100,Screen.height /2 + 50 ,250,50), "Quit Game")){
+			
 			Application.Quit();
+			
+			
 		}
 		//Make resume game
 		if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2 - 50,250,50), "Resume Game")){
+			
 			//unpause the game
 			pauseEnabled = false;
 			Time.timeScale = 1;
 			AudioListener.volume = 1;
 			Cursor.visible = false;	
+			
+			
 		}
 	}
 }

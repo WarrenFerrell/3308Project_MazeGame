@@ -1,6 +1,10 @@
 ﻿var isQuit=false;
+var AudioFile:AudioClip;
 
 function OnMouseEnter(){
+//Play Music
+GetComponent.<AudioSource>().clip = AudioFile;
+GetComponent.<AudioSource>().Play();
 //change text color
 GetComponent.<Renderer>().material.color=Color.red;
 }
