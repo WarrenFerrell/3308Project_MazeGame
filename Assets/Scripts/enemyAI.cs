@@ -28,12 +28,14 @@ public class enemyAI : MonoBehaviour {
 	//receives argument from waypoint upon collision, determining next destination)
 	void OnTriggerEnter(Collider collision)
 	{
-		collidingWith = collision.gameObject;
-		collidingWith.SendMessage("previousDestination",destination);
+
+		if (collision.gameObject != collidingWith) {
+			collidingWith = collision.gameObject;
+			collidingWith.SendMessage ("previousDestination", destination);
+		}
 		
 	}
-	
-	
+
 	void nextDestination (GameObject nextDestination)
 	{
 		previousDestination = destination;

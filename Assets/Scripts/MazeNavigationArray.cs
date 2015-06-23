@@ -11,15 +11,15 @@ public class MazeNavigationArray : MonoBehaviour {
 	public GameObject collidingWith;
 	
 	void Start () {
-		int terrainLayerMask = 1 << 8; //ignore all objects not in Terran Layer
+		int terrainLayerMask = 1 << 8 | 1 << 9; //ignore all objects not in Terran Layer
 		destinationList = new GameObject[4];
-		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.forward, out pieceFound, 15, terrainLayerMask)==true)
+		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.forward, out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
 			destinationList[0] = pieceFound.collider.gameObject;
-		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.right,out pieceFound, 15, terrainLayerMask)==true)
+		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.right,out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
 			destinationList[1] = pieceFound.collider.gameObject;
-		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.back,out pieceFound, 15, terrainLayerMask)==true)
+		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.back,out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
 			destinationList[2] = pieceFound.collider.gameObject;
-		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.left,out pieceFound, 15, terrainLayerMask)==true)
+		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.left,out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
 			destinationList[3] = pieceFound.collider.gameObject;
 	}	
 	
@@ -34,10 +34,11 @@ public class MazeNavigationArray : MonoBehaviour {
 		if (previousDestination = gameObject)
 		{
 			do
-			{int index = Random.Range (0,4);
+			{int index = Random.Range (0,3);
 				destination = destinationList[index];}
 			while (destination==null || destination == previousDestination);
-			collidingWith.SendMessage("nextDestination",destination);}
+			collidingWith.SendMessage("nextDestination",destination);
+		}
 	}
 	
 
