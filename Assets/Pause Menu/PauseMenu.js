@@ -5,7 +5,7 @@
 //*******************************************************************************
 var mainMenuSceneName : String;
 var pauseMenuFont : Font;
-var AudioFile:AudioClip;
+
 private var pauseEnabled = false;			
 
 function Start(){
@@ -55,7 +55,7 @@ GUI.skin.button.font = pauseMenuFont;
 		
 		//Make Main Menu button
 		if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2,250,50), "Main Menu")){
-			GetComponent.<AudioSource>().clip = AudioFile;
+			
 			Application.LoadLevel(mainMenuSceneName);
 			
 			
