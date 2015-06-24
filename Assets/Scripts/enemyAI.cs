@@ -31,7 +31,7 @@ public class enemyAI : MonoBehaviour {
 
 		if (collision.gameObject != collidingWith) {
 			collidingWith = collision.gameObject;
-			collidingWith.SendMessage ("previousDestination", destination);
+			//collidingWith.SendMessage ("previousDestination", previousDestination);
 		}
 		
 	}

@@ -6,6 +6,7 @@ public class MazeNavigationArray : MonoBehaviour {
 	
 	public GameObject[] destinationList;
 	public GameObject previousDestination;
+	GameObject previousDestinationFromAI;
 	RaycastHit pieceFound;
 	public GameObject destination;
 	public GameObject collidingWith;
@@ -31,12 +32,14 @@ public class MazeNavigationArray : MonoBehaviour {
 	void OnTriggerEnter(Collider collision)
 	{	
 		collidingWith = collision.gameObject;
+		setPreviousDestination(previousDestinationFromAI);
 		if (previousDestination = gameObject)
 		{
 			do
 			{int index = Random.Range (0,3);
 				destination = destinationList[index];}
 			while (destination==null || destination == previousDestination);
+
 			collidingWith.SendMessage("nextDestination",destination);
 		}
 	}
