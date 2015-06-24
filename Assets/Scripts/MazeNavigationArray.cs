@@ -33,13 +33,10 @@ public class MazeNavigationArray : MonoBehaviour {
 	{	
 		collidingWith = collision.gameObject;
 		setPreviousDestination(previousDestinationFromAI);
-		Debug.Log (collidingWith.name);
-
 		if (previousDestination = gameObject)
 		{
 			do
-			{int index = Random.Range (0,4);
-				Debug.Log(index);
+			{int index = Random.Range (0,3);
 				destination = destinationList[index];}
 			while (destination==null || destination == previousDestination);
 
