@@ -44,7 +44,8 @@ public class enemyAI : MonoBehaviour {
 		if (collision.gameObject.name == "Dark_Cat_Prefab")
 		{Application.LoadLevel("DeathScreen");} //redirect to death screen
 	}
-	//receives argument from waypoint upon collision, determining next destination)
+
+	//enter this function upon 'trigger' by another game object
 	void OnTriggerEnter(Collider collision)
 	{
 		collidingWith = collision.gameObject;
@@ -56,18 +57,14 @@ public class enemyAI : MonoBehaviour {
 
 		previousDestination = destination;
 		destination = temp;
-		destinationTransform = destinationObject.transform;
-			arrayFilled=false;}
-
+			}
 	}
 
-
+	void OnCollisionExit(Collision collision)
+	{
+		arrayFilled=false;
+	}
 	
 	// Update is called once per frame
-	void Update () {
-
-		nav.SetDestination(GameObject.Find (destination).transform.position);
-
-		
-	}
+	void Update () {nav.SetDestination(GameObject.Find (destination).transform.position);}
 }
