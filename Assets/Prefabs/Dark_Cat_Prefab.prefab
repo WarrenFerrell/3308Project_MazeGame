@@ -1622,7 +1622,6 @@ GameObject:
   - 54: {fileID: 5423340}
   - 65: {fileID: 6541254}
   - 114: {fileID: 11435440}
-  - 114: {fileID: 11440752}
   m_Layer: 0
   m_Name: Dark_Cat_Prefab
   m_TagString: Untagged
@@ -5404,18 +5403,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
---- !u!114 &11440752
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 152470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3d21e3b3735de2478261e54c672f28d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Score: 0
 --- !u!124 &12472818
 Behaviour:
   m_ObjectHideFlags: 1

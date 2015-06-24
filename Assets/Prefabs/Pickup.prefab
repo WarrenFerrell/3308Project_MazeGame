@@ -15,7 +15,7 @@ GameObject:
   - 54: {fileID: 5418636}
   m_Layer: 0
   m_Name: Pickup
-  m_TagString: CollectObject
+  m_TagString: Pick Up
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108946}
   m_LocalRotation: {x: .461939812, y: .191341713, z: .191341713, w: .844623208}
-  m_LocalPosition: {x: 0, y: .800000012, z: 5}
+  m_LocalPosition: {x: 0, y: .5, z: 0}
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +42,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: afe7233093c56a54c8cf77254f4ff0a0, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 1
@@ -98,10 +98,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 108946}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afa6e8504fa344bec9bc9ef5ccd5d321, type: 3}
+  m_Script: {fileID: 11500000, guid: 6b0083121e8574941bbf807f8862a180, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myScoreKeeper: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
@@ -115,7 +114,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: afe7233093c56a54c8cf77254f4ff0a0, type: 2}
     - target: {fileID: 0}
       propertyPath: m_TagString
-      value: CollectObject
+      value: Pick Up
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsTrigger
@@ -127,10 +126,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

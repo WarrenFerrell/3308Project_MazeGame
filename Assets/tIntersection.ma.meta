@@ -4,33 +4,7 @@ timeCreated: 1434579865
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
-  fileIDToRecycleName:
-    100000: pCylinder1
-    100002: pPipe1
-    100004: pPipe2
-    100006: pPipe4
-    100008: pPipe5
-    100010: //RootNode
-    100012: transform1
-    100014: transform2
-    400000: pCylinder1
-    400002: pPipe1
-    400004: pPipe2
-    400006: pPipe4
-    400008: pPipe5
-    400010: //RootNode
-    400012: transform1
-    400014: transform2
-    2300000: pCylinder1
-    2300002: pPipe4
-    2300004: pPipe5
-    3300000: pCylinder1
-    3300002: pPipe4
-    3300004: pPipe5
-    4300000: pPipe4
-    4300002: pCylinder1
-    4300004: pPipe5
-    9500000: //RootNode
+  fileIDToRecycleName: {}
   materials:
     importMaterials: 1
     materialName: 0
