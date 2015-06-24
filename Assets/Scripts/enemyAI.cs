@@ -9,6 +9,7 @@ public class enemyAI : MonoBehaviour {
 	public GameObject destination;
 	public GameObject previousDestination;
 	string waypointName;
+	string comingFrom;
 	
 	
 	void Start ()
@@ -21,8 +22,8 @@ public class enemyAI : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision collision) //check if collision is with player
 	{
-		if (collision.gameObject.name == "Dark_Cat_Prefab")
-		{Application.LoadLevel("DeathScreen");} //redirect to death screen
+		if (collision.gameObject.name == "Dark_Cat")
+		{Application.LoadLevel("MainMenu");} //redirect to death screen
 	}
 	//receives argument from waypoint upon collision, determining next destination)
 	void OnTriggerEnter(Collider collision)
@@ -30,7 +31,7 @@ public class enemyAI : MonoBehaviour {
 
 		if (collision.gameObject != collidingWith) {
 			collidingWith = collision.gameObject;
-			collidingWith.SendMessage ("setPreviousDestination", previousDestination);
+			//collidingWith.SendMessage ("previousDestination", previousDestination);
 		}
 		
 	}
