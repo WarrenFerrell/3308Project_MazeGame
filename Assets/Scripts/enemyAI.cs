@@ -8,7 +8,6 @@ public class enemyAI : MonoBehaviour {
 	public GameObject collidingWith;
 	public GameObject destination;
 	public GameObject previousDestination;
-	string waypointName;
 	
 	
 	void Start ()
@@ -26,7 +25,7 @@ public class enemyAI : MonoBehaviour {
 	}
 	//receives argument from waypoint upon collision, determining next destination)
 	void OnTriggerEnter(Collider collision)
-	{
+	{Debug.Log (collision.name);
 
 		if (collision.gameObject != collidingWith) {
 			collidingWith = collision.gameObject;
