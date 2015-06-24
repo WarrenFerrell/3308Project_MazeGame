@@ -83,8 +83,9 @@ GameObject:
   - 64: {fileID: 6464226}
   - 65: {fileID: 6524366}
   - 65: {fileID: 6537248}
+  - 65: {fileID: 6595234}
   m_Layer: 9
-  m_Name: SloppyWay (2)
+  m_Name: SloppyWay (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -415,9 +416,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 165198}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106709}
+  m_LocalPosition: {x: -20, y: 0, z: -40}
+  m_LocalScale: {x: 1.01000071, y: 1.01000059, z: 1.01000106}
   m_Children:
   - {fileID: 479232}
   m_Father: {fileID: 0}
@@ -965,6 +966,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6500001, y: 10, z: 6}
   m_Center: {x: -3.25, y: 0, z: 2.50000048}
+--- !u!65 &6595234
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142808}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.6500001, y: 3.6500001, z: 6}
+  m_Center: {x: 3.25, y: 3.25, z: 2.50000048}
 --- !u!95 &9577346
 Animator:
   serializedVersion: 3
@@ -995,7 +1008,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuSceneName: MainMenu
   pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
-  AudioFile: {fileID: 0}
 --- !u!114 &11409950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1009,7 +1021,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuSceneName: MainMenu
   pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
-  AudioFile: {fileID: 0}
 --- !u!114 &11464568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1022,9 +1033,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationList: []
-  previousDestination: {fileID: 0}
-  destination: {fileID: 0}
-  collidingWith: {fileID: 0}
+  previousDestination: '&'
+  destination: '*'
+  collidingWith: .
 --- !u!135 &13552796
 SphereCollider:
   m_ObjectHideFlags: 1
