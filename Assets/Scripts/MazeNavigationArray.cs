@@ -35,10 +35,10 @@ public class MazeNavigationArray : MonoBehaviour {
 
 		//if (previousDestination = gameObject)
 		{
-			collision.BroadcastMessage("fillArray0",destinationList[0]);
-			collision.BroadcastMessage("fillArray1",destinationList[1]);
-			collision.BroadcastMessage("fillArray2",destinationList[2]);
-			collision.BroadcastMessage("fillArray3",destinationList[3]);
+			collision.SendMessage("fillArray0",destinationList[0], SendMessageOptions.DontRequireReceiver);
+			collision.SendMessage("fillArray1",destinationList[1], SendMessageOptions.DontRequireReceiver);
+			collision.SendMessage("fillArray2",destinationList[2], SendMessageOptions.DontRequireReceiver);
+			collision.SendMessage("fillArray3",destinationList[3], SendMessageOptions.DontRequireReceiver);
 		
 			
 			
