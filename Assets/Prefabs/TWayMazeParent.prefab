@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 476472}
   - 33: {fileID: 3352622}
   - 23: {fileID: 2335060}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27,7 +27,7 @@ GameObject:
   - 4: {fileID: 456288}
   - 33: {fileID: 3357620}
   - 23: {fileID: 2348440}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61,7 +61,7 @@ GameObject:
   - 4: {fileID: 432444}
   - 33: {fileID: 3355066}
   - 23: {fileID: 2363932}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ GameObject:
   - 4: {fileID: 441388}
   - 33: {fileID: 3360610}
   - 23: {fileID: 2343530}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 441156}
   - 33: {fileID: 3379942}
   - 23: {fileID: 2365712}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - 4: {fileID: 485870}
   - 33: {fileID: 3312790}
   - 23: {fileID: 2303394}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ GameObject:
   - 4: {fileID: 478064}
   - 33: {fileID: 3310338}
   - 23: {fileID: 2369600}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID67
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   - 33: {fileID: 3385276}
   - 23: {fileID: 2371690}
   - 64: {fileID: 6421236}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -169,7 +169,7 @@ GameObject:
   - 65: {fileID: 6558260}
   - 65: {fileID: 6525350}
   - 65: {fileID: 6570106}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: TWay (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   - 4: {fileID: 464606}
   - 33: {fileID: 3369632}
   - 23: {fileID: 2376082}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,7 +203,7 @@ GameObject:
   - 4: {fileID: 485722}
   - 33: {fileID: 3377094}
   - 23: {fileID: 2335568}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID71
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   - 64: {fileID: 6403624}
   - 23: {fileID: 2372730}
   - 114: {fileID: 11422364}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Guide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - 64: {fileID: 6446502}
   - 23: {fileID: 2389492}
   - 114: {fileID: 11403782}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Guide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -947,6 +947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuSceneName: MainMenu
   pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
+  AudioFile: {fileID: 0}
 --- !u!114 &11422364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -960,6 +961,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuSceneName: MainMenu
   pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
+  AudioFile: {fileID: 0}
 --- !u!114 &11497212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -972,6 +974,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationList: []
+  previousDestination: {fileID: 0}
+  destination: {fileID: 0}
+  collidingWith: {fileID: 0}
 --- !u!135 &13552042
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -982,7 +987,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .5
   m_Center: {x: 0, y: .25, z: 0}
 --- !u!1001 &100100000
 Prefab:
@@ -1041,11 +1046,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Radius
-      value: 1
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

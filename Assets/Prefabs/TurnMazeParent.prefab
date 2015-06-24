@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3393548}
   - 23: {fileID: 2335318}
   - 64: {fileID: 6481534}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID77
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +28,7 @@ GameObject:
   - 4: {fileID: 485950}
   - 33: {fileID: 3340804}
   - 23: {fileID: 2312544}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - 4: {fileID: 419390}
   - 33: {fileID: 3353174}
   - 23: {fileID: 2323044}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID69
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - 4: {fileID: 439292}
   - 33: {fileID: 3302324}
   - 23: {fileID: 2344334}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - 64: {fileID: 6464226}
   - 65: {fileID: 6524366}
   - 65: {fileID: 6537248}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SloppyWay (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - 4: {fileID: 413746}
   - 33: {fileID: 3363140}
   - 23: {fileID: 2324740}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID57
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - 64: {fileID: 6488758}
   - 23: {fileID: 2366762}
   - 114: {fileID: 11409950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Guide (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - 4: {fileID: 494168}
   - 33: {fileID: 3302680}
   - 23: {fileID: 2381662}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   - 4: {fileID: 433064}
   - 33: {fileID: 3355948}
   - 23: {fileID: 2325790}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID45
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - 4: {fileID: 463060}
   - 33: {fileID: 3305400}
   - 23: {fileID: 2327844}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - 4: {fileID: 467494}
   - 33: {fileID: 3345006}
   - 23: {fileID: 2340374}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID85
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -221,7 +221,7 @@ GameObject:
   - 4: {fileID: 423210}
   - 33: {fileID: 3375234}
   - 23: {fileID: 2373604}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID51
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -240,7 +240,7 @@ GameObject:
   - 64: {fileID: 6497476}
   - 23: {fileID: 2383072}
   - 114: {fileID: 11405574}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Guide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +257,7 @@ GameObject:
   - 4: {fileID: 456310}
   - 33: {fileID: 3364824}
   - 23: {fileID: 2361036}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ID63
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,6 +995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuSceneName: MainMenu
   pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
+  AudioFile: {fileID: 0}
 --- !u!114 &11409950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1008,6 +1009,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuSceneName: MainMenu
   pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
+  AudioFile: {fileID: 0}
 --- !u!114 &11464568
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1020,6 +1022,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationList: []
+  previousDestination: {fileID: 0}
+  destination: {fileID: 0}
+  collidingWith: {fileID: 0}
 --- !u!135 &13552796
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -1030,7 +1035,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1
+  m_Radius: .5
   m_Center: {x: 0, y: .25, z: 0}
 --- !u!1001 &100100000
 Prefab:
@@ -1109,11 +1114,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Layer
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Radius
-      value: 1
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

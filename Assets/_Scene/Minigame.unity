@@ -721,7 +721,6 @@ GameObject:
   - 33: {fileID: 909540191}
   - 64: {fileID: 909540190}
   - 23: {fileID: 909540189}
-  - 114: {fileID: 909540193}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -784,19 +783,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!114 &909540193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 909540188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17cdd0479fe15bb48a4fb1d92371b51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuSceneName: MainMenu
-  pauseMenuFont: {fileID: 0}
 --- !u!1001 &927571802
 Prefab:
   m_ObjectHideFlags: 0

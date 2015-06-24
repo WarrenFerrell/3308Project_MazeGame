@@ -3,22 +3,47 @@ using System.Collections;
 
 public class MazeNavigationArray : MonoBehaviour {
 	// Use this for initialization
-
-	public Transform[] destinationList;
+	
+	public string[] destinationList;
+	public string previousDestination;
+	string previousDestinationFromAI;
 	RaycastHit pieceFound;
-
+	public string destination;
+	public string collidingWith;
+	
 	void Start () {
-		int terrainLayerMask = 1 << 8; //ignore all objects not in Terran Layer
-		destinationList = new Transform[4];
-		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.forward, out pieceFound, 15, terrainLayerMask)==true)
-			destinationList[0] = pieceFound.transform;
-		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.right,out pieceFound, 15, terrainLayerMask)==true)
-			destinationList[1] = pieceFound.transform;
-		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.back,out pieceFound, 15, terrainLayerMask)==true)
-			destinationList[2] = pieceFound.transform;
-		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.left,out pieceFound, 15, terrainLayerMask)==true)
-			destinationList[3] = pieceFound.transform;
+		int terrainLayerMask = 1 << 8 | 1 << 9; //ignore all objects not in Terran Layer
+		destinationList = new string[4];
+		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.forward, out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
+			destinationList[0] = pieceFound.collider.gameObject.name;
+		else destinationList[0] = "NULL";
+		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.right,out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
+			destinationList[1] = pieceFound.collider.gameObject.name;
+		else destinationList[1] = "NULL";
+		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.back,out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
+			destinationList[2] = pieceFound.collider.gameObject.name;
+		else destinationList[2] = "NULL";
+		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.left,out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
+			destinationList[3] = pieceFound.collider.gameObject.name;
+		else destinationList[3] = "NULL";
 	}	
+	
 
+	void OnTriggerEnter(Collider collision)
+	{	
+		//collidingWith = collision.gameObject;
+
+		//if (previousDestination = gameObject)
+		{
+			collision.BroadcastMessage("fillArray0",destinationList[0]);
+			collision.BroadcastMessage("fillArray1",destinationList[1]);
+			collision.BroadcastMessage("fillArray2",destinationList[2]);
+			collision.BroadcastMessage("fillArray3",destinationList[3]);
+		
+			
+			
+		}
+	}
+	
 
 }

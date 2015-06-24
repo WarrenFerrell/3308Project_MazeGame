@@ -1,6 +1,10 @@
 ﻿var isQuit=false;
+var AudioFile:AudioClip;
 
 function OnMouseEnter(){
+//Play Music
+GetComponent.<AudioSource>().clip = AudioFile;
+GetComponent.<AudioSource>().Play();
 //change text color
 GetComponent.<Renderer>().material.color=Color.red;
 }
@@ -18,7 +22,7 @@ Application.Quit();
 }
 else {
 //load level
-Application.LoadLevel("Minigame");
+Application.LoadLevel("StaticMaze");
 }
 }
 
