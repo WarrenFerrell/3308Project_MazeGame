@@ -4,8 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - MazePiece
-  - Pick Up
+  - CollectObject
   layers:
   - Default
   - TransparentFX
