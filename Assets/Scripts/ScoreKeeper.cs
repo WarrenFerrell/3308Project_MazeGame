@@ -4,14 +4,26 @@ using System.Collections;
 public class ScoreKeeper : MonoBehaviour {
 
 	public static int Score;
+	public CollectibleObject pickupItem;
+	public GUIText scoreText;
 	
-	void Awake()
+	void Start()
 	{
 		Score = 0;
+		UpdateScore ();
+
 	}
 	
-	void OnGUI()
+	void OnTriggerEnter (Collider other)
 	{
-		GUI.Label(new Rect(0, 0, 100, 25), "Score: " + Score);
+		if (other.tag == "CollectObject") {
+			Score += 10;
+			UpdateScore();
+		}
+	}
+
+	void UpdateScore()
+	{
+		scoreText.text = "Score: " + Score;
 	}
 }
