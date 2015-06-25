@@ -1208,6 +1208,18 @@ Prefab:
       propertyPath: scoreText
       value: 
       objectReference: {fileID: 576294579}
+    - target: {fileID: 5423340, guid: b1819d26aeec29544b646357dea90688, type: 2}
+      propertyPath: m_Constraints
+      value: 84
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423340, guid: b1819d26aeec29544b646357dea90688, type: 2}
+      propertyPath: m_Drag
+      value: Infinity
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423340, guid: b1819d26aeec29544b646357dea90688, type: 2}
+      propertyPath: m_AngularDrag
+      value: Infinity
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b1819d26aeec29544b646357dea90688, type: 2}
   m_IsPrefabParent: 0
