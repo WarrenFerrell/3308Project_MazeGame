@@ -14,17 +14,7 @@
  {
      theTimer -= Time.deltaTime;
  
-     if (theTimer < 10) 
-     {
-         Debug.Log("TEN SECONDS LEFT !");
-         showRemaining = true;
-     }
- 
-     if (theTimer <= 0) 
-     {
-         Debug.Log("OUT OF TIME");
-         theTimer = 0;
-     }
+     
  
      if ( Input.GetKeyUp(KeyCode.G) )
      {
@@ -41,7 +31,7 @@
      if (showRemaining)
      {
      	GUI.skin.font = MyFont;
-         GUI.Label( Rect( 725, 340, Screen.width - 40, 60), text );
+         GUI.Label( Rect( 625, 275, Screen.width - 40, 60), text );
      }
  }
  
