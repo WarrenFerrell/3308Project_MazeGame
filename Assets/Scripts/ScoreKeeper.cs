@@ -20,6 +20,14 @@ public class ScoreKeeper : MonoBehaviour {
 			Score += 10;
 			UpdateScore();
 		}
+		if (other.tag == "BigCollect") {
+			Score += 50;
+			UpdateScore ();
+		}
+		if (other.tag == "HugeCollect") {
+			Score += 100;
+			UpdateScore ();
+		}
 	}
 
 	void UpdateScore()

@@ -4,9 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - CollectObject
-  - Enemy
-  - MazePiece
+  - BigCollect
   layers:
   - Default
   - TransparentFX
