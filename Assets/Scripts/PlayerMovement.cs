@@ -20,10 +20,9 @@ public class PlayerMovement : MonoBehaviour {
 	
 	
 	void ControlPlayer()
-	{
-		float sideMov = Input.GetAxisRaw ("Horizontal"); 
-		float forwardMov = Input.GetAxisRaw ("Vertical"); 
-		accelerometer(&forwardMov, &sideMov);
+	{ 
+		float forwardMov = -Input.acceleration.y;
+		float sideMov = Input.acceleration.x;
 
 		Vector3 movement = new Vector3(0, 0.0f, forwardMov);
 		//if (h != 0 || v != 0) {
@@ -38,9 +37,5 @@ public class PlayerMovement : MonoBehaviour {
 		// Tell the animator whether or not the player is walking.
 		anim.SetBool ("IsWalking", walking);
 		
-	}
-	void accelerometer(float* forwardMov, float* sideMov){
-		forwardMov = -Input.acceleration.y;
-		sideMov = Input.acceleration.x;
 	}
 }
