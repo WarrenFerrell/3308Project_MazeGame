@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-/*! Script name: enemyAI.cs
- * Description: enemyAI script is attached to the enemy game object 'labrador'
+/*! \file enemyAI.cs
+ * \brief enemyAI script is attached to the enemy game object 'labrador'
  * this script receives information from maze pieces regarding possible destinations
  * from that location.  EnemyAI script chooses random destination from possible destinations
+ * author Donvoan Guelde
  * */
 
 public class enemyAI : MonoBehaviour {
