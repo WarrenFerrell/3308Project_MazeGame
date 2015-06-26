@@ -170,7 +170,7 @@ GameObject:
   - 65: {fileID: 6525350}
   - 65: {fileID: 6570106}
   m_Layer: 9
-  m_Name: TWay (2)
+  m_Name: TWay (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,7 +221,6 @@ GameObject:
   - 33: {fileID: 3392198}
   - 64: {fileID: 6403624}
   - 23: {fileID: 2372730}
-  - 114: {fileID: 11422364}
   m_Layer: 9
   m_Name: Guide
   m_TagString: Untagged
@@ -240,7 +239,6 @@ GameObject:
   - 33: {fileID: 3384878}
   - 64: {fileID: 6446502}
   - 23: {fileID: 2389492}
-  - 114: {fileID: 11403782}
   m_Layer: 9
   m_Name: Guide
   m_TagString: Untagged
@@ -314,8 +312,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 112584}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: -1.62920685e-07}
+  m_LocalPosition: {x: 20, y: 0, z: 20}
   m_LocalScale: {x: 1.01000071, y: 1.01000071, z: 1.01000094}
   m_Children:
   - {fileID: 415542}
@@ -934,34 +932,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11403782
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 198120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17cdd0479fe15bb48a4fb1d92371b51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuSceneName: MainMenu
-  pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
-  AudioFile: {fileID: 0}
---- !u!114 &11422364
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 195910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17cdd0479fe15bb48a4fb1d92371b51d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenuSceneName: MainMenu
-  pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
-  AudioFile: {fileID: 0}
 --- !u!114 &11497212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -974,9 +944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationList: []
-  previousDestination: {fileID: 0}
-  destination: {fileID: 0}
-  collidingWith: {fileID: 0}
+  previousDestination: '&'
+  destination: '*'
+  collidingWith: .
 --- !u!135 &13552042
 SphereCollider:
   m_ObjectHideFlags: 1
