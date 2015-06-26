@@ -66,7 +66,7 @@ GameObject:
   - 65: {fileID: 6579622}
   - 65: {fileID: 6598004}
   m_Layer: 9
-  m_Name: StraightWay (1)
+  m_Name: StraightWay (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,6 +117,7 @@ GameObject:
   - 33: {fileID: 3328776}
   - 64: {fileID: 6403948}
   - 23: {fileID: 2374634}
+  - 114: {fileID: 11440940}
   m_Layer: 9
   m_Name: Guide
   m_TagString: Untagged
@@ -159,8 +160,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 178626}
-  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.00999999, y: 1.00999999, z: 1}
   m_Children:
   - {fileID: 404754}
@@ -477,9 +478,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationList: []
-  previousDestination: '&'
-  destination: '*'
-  collidingWith: .
+  previousDestination: {fileID: 0}
+  destination: {fileID: 0}
+  collidingWith: {fileID: 0}
+--- !u!114 &11440940
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 188494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17cdd0479fe15bb48a4fb1d92371b51d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenuSceneName: MainMenu
+  pauseMenuFont: {fileID: 12800000, guid: ba458c1184541476091009c1abe64a66, type: 3}
+  AudioFile: {fileID: 0}
 --- !u!135 &13593278
 SphereCollider:
   m_ObjectHideFlags: 1
