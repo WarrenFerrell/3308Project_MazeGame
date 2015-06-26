@@ -839,12 +839,6 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 482270, guid: 2301cf49c44b34430b3dc61bbfb68022, type: 2}
   m_PrefabInternal: {fileID: 611535049}
---- !u!114 &209335397 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11456136, guid: 2301cf49c44b34430b3dc61bbfb68022,
-    type: 2}
-  m_PrefabInternal: {fileID: 611535049}
-  m_Script: {fileID: 11500000, guid: b22998017b51449a59a68024819e6c3c, type: 3}
 --- !u!1 &216124756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1237,7 +1231,8 @@ Prefab:
     - target: {fileID: 11488564, guid: b1819d26aeec29544b646357dea90688, type: 2}
       propertyPath: pickupItem
       value: 
-      objectReference: {fileID: 209335397}
+      objectReference: {fileID: 11456136, guid: 2301cf49c44b34430b3dc61bbfb68022,
+        type: 2}
     - target: {fileID: 11488564, guid: b1819d26aeec29544b646357dea90688, type: 2}
       propertyPath: scoreText
       value: 
