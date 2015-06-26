@@ -42,4 +42,5 @@ public class PlayerMovement : MonoBehaviour {
 	void accelerometer(float* forwardMov, float* sideMov){
 		forwardMov = -Input.acceleration.y;
 		sideMov = Input.acceleration.x;
+	}
 }
