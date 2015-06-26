@@ -1,0 +1,607 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<html>
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Gendarme Report</title>
+    <script language="javascript">
+        
+function expcol (sender, args)
+{
+	var el = document.getElementById (args);
+	if (el.style.display == 'block') {
+		sender.textContent = '[show]';
+		el.style.display = 'none';
+	} else {
+		sender.textContent = '[hide]';
+		el.style.display = 'block';
+	}
+}
+					</script>
+  </head>
+  <style type="text/css">
+      
+					body {
+						font: "DejaVu Sans", "Bitstream Vera Sans", Verdana, sans-serif;
+					}
+					h1 {
+						font-size: 1.8em;
+						color: #274e80;
+					}
+					h2 {
+						font-size: 1.4em;
+						color: #19194b;
+					}
+					h3 {
+						font-size: 1.2em;
+						font-weight: normal;
+						color: #274e80;
+					}
+					p, li, b {
+						font-size: 1em;
+					}
+					p.where, p.problem, p.found, p.solution {
+						font: "Consolas", "DejaVu Sans Mono", monospace;
+						background-color: #F6F6F6;
+						border: 1px solid #DDDDDD;
+						padding: 10px;
+					}
+					p.severity-Critical {
+						border-left: 6px solid red;
+					}
+					p.severity-High {
+						border-left: 3px solid red;
+					}
+					p.severity-Medium {
+						border-left: 3px solid yellow;
+					}
+					p.severity-Low {
+						border-left: 3px solid green;
+					}
+					p.severity-Audit {
+						border-left: 3px solid blue;
+					}
+					span.found {
+						margin-left: 10px;
+					}
+					div.toc {
+						background-color: #F6F6F6;
+						border: 1px solid #DDDDDD;
+						padding: 10px;	
+						float: right;				
+						width: 300px;						
+					}
+					a:link, a:visited {
+						color: #274e80;
+						text-decoration: none;
+					}
+					a:active, a:hover {
+						color: #19194b;
+						text-decoration: none;
+					}
+					a.go-to-rule {
+						float: right;
+						color: #274e80;
+						font-size: 0.6em;
+						font-weight: normal;
+					}
+				</style>
+  <body>
+    <h1>Gendarme Report</h1>
+    <p>Produced on 06/26/2015 15:09:35 UTC.</p>
+    <div class="toc">
+      <h2 align="center">Table of contents</h2>
+      <p style="font-size: 10pt;"><a href="#s1">1.  Summary</a><br><a href="#s1_1">  1.1.  List of assemblies searched</a><br><a href="#s1_2">  1.2.  List of rules used</a><br><a href="#s2">2.  Reported defects</a><br><a href="#AvoidConcatenatingCharsRule">  2.1. AvoidConcatenatingCharsRule<br></a><a href="#AvoidEmptyComponentsMethodsRule">  2.2. AvoidEmptyComponentsMethodsRule<br></a><a href="#AvoidLackOfCohesionOfMethodsRule">  2.3. AvoidLackOfCohesionOfMethodsRule<br></a><a href="#AvoidLargeClassesRule">  2.4. AvoidLargeClassesRule<br></a><a href="#AvoidUncalledPrivateCodeRule">  2.5. AvoidUncalledPrivateCodeRule<br></a><a href="#AvoidUnnecessarySpecializationRule">  2.6. AvoidUnnecessarySpecializationRule<br></a><a href="#AvoidUnusedParametersRule">  2.7. AvoidUnusedParametersRule<br></a><a href="#AvoidUnusedPrivateFieldsRule">  2.8. AvoidUnusedPrivateFieldsRule<br></a><a href="#AvoidUsingFindObjectInUpdateRule">  2.9. AvoidUsingFindObjectInUpdateRule<br></a><a href="#CacheComponentLookupRule">  2.10. CacheComponentLookupRule<br></a><a href="#VariableNamesShouldNotMatchFieldNamesRule">  2.11. VariableNamesShouldNotMatchFieldNamesRule<br></a></p>
+    </div>
+    <h1><a name="s1">Summary</a></h1>
+    <p><a href="http://www.mono-project.com/Gendarme">Gendarme</a> found 50 potential defects using 80 rules.
+          </p>
+    <p><h2>List of assemblies analyzed
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'Assemblies_block'); return false;">[show]</a></h2><div id="Assemblies_block" style="display:none;">
+        <ul><li>/Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Library/ScriptAssemblies/Assembly-CSharp.dll: 44 defects
+          </li></ul>
+      </div></p>
+    <p><h2>List of rules used
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'Rules_block'); return false;">[show]</a></h2><div id="Rules_block" style="display:none;">
+        <p><b>Assembly</b>:
+				<ul><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.AvoidAssemblyVersionMismatchRule(2.10)" target="AvoidAssemblyVersionMismatchRule">Gendarme.Rules.BadPractice.AvoidAssemblyVersionMismatchRule</a>
+		: 0 defects
+	
+            </li></ul></p>
+        <p><b>Type</b>:
+				<ul><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Unity.Rules.Performance.UseBuiltInArraysRule(2.10)" target="UseBuiltInArraysRule">Unity.Rules.Performance.UseBuiltInArraysRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidLargeStructureRule(2.10)" target="AvoidLargeStructureRule">Gendarme.Rules.Performance.AvoidLargeStructureRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnsealedUninheritedInternalTypeRule(2.10)" target="AvoidUnsealedUninheritedInternalTypeRule">Gendarme.Rules.Performance.AvoidUnsealedUninheritedInternalTypeRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnsealedConcreteAttributesRule(2.10)" target="AvoidUnsealedConcreteAttributesRule">Gendarme.Rules.Performance.AvoidUnsealedConcreteAttributesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.ImplementEqualsTypeRule(2.10)" target="ImplementEqualsTypeRule">Gendarme.Rules.Performance.ImplementEqualsTypeRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnusedPrivateFieldsRule(2.10)" target="AvoidUnusedPrivateFieldsRule">Gendarme.Rules.Performance.AvoidUnusedPrivateFieldsRule</a>
+		: 6 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.OverrideValueTypeDefaultsRule(2.10)" target="OverrideValueTypeDefaultsRule">Gendarme.Rules.Performance.OverrideValueTypeDefaultsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.RemoveUnneededFinalizerRule(2.10)" target="RemoveUnneededFinalizerRule">Gendarme.Rules.Performance.RemoveUnneededFinalizerRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.UseSuppressFinalizeOnIDisposableTypeWithFinalizerRule(2.10)" target="UseSuppressFinalizeOnIDisposableTypeWithFinalizerRule">Gendarme.Rules.Performance.UseSuppressFinalizeOnIDisposableTypeWithFinalizerRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUninstantiatedInternalClassesRule(2.10)" target="AvoidUninstantiatedInternalClassesRule">Gendarme.Rules.Performance.AvoidUninstantiatedInternalClassesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.ConsiderCustomAccessorsForNonVisibleEventsRule(2.10)" target="ConsiderCustomAccessorsForNonVisibleEventsRule">Gendarme.Rules.Performance.ConsiderCustomAccessorsForNonVisibleEventsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.PreferLiteralOverInitOnlyFieldsRule(2.10)" target="PreferLiteralOverInitOnlyFieldsRule">Gendarme.Rules.Performance.PreferLiteralOverInitOnlyFieldsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.AvoidDeepInheritanceTreeRule(2.10)" target="AvoidDeepInheritanceTreeRule">Gendarme.Rules.Maintainability.AvoidDeepInheritanceTreeRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.AvoidAlwaysNullFieldRule(2.10)" target="AvoidAlwaysNullFieldRule">Gendarme.Rules.Maintainability.AvoidAlwaysNullFieldRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.VariableNamesShouldNotMatchFieldNamesRule(2.10)" target="VariableNamesShouldNotMatchFieldNamesRule">Gendarme.Rules.Maintainability.VariableNamesShouldNotMatchFieldNamesRule</a>
+		: 1 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.ReviewMisleadingFieldNamesRule(2.10)" target="ReviewMisleadingFieldNamesRule">Gendarme.Rules.Maintainability.ReviewMisleadingFieldNamesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.RemoveDependenceOnObsoleteCodeRule(2.10)" target="RemoveDependenceOnObsoleteCodeRule">Gendarme.Rules.Maintainability.RemoveDependenceOnObsoleteCodeRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.AvoidLackOfCohesionOfMethodsRule(2.10)" target="AvoidLackOfCohesionOfMethodsRule">Gendarme.Rules.Maintainability.AvoidLackOfCohesionOfMethodsRule</a>
+		: 1 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.ToStringShouldNotReturnNullRule(2.10)" target="ToStringShouldNotReturnNullRule">Gendarme.Rules.BadPractice.ToStringShouldNotReturnNullRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.PreferSafeHandleRule(2.10)" target="PreferSafeHandleRule">Gendarme.Rules.BadPractice.PreferSafeHandleRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.ConstructorShouldNotCallVirtualMethodsRule(2.10)" target="ConstructorShouldNotCallVirtualMethodsRule">Gendarme.Rules.BadPractice.ConstructorShouldNotCallVirtualMethodsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.ObsoleteMessagesShouldNotBeEmptyRule(2.10)" target="ObsoleteMessagesShouldNotBeEmptyRule">Gendarme.Rules.BadPractice.ObsoleteMessagesShouldNotBeEmptyRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.EqualsShouldHandleNullArgRule(2.10)" target="EqualsShouldHandleNullArgRule">Gendarme.Rules.BadPractice.EqualsShouldHandleNullArgRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.OnlyUseDisposeForIDisposableTypesRule(2.10)" target="OnlyUseDisposeForIDisposableTypesRule">Gendarme.Rules.BadPractice.OnlyUseDisposeForIDisposableTypesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.AvoidVisibleConstantFieldRule(2.10)" target="AvoidVisibleConstantFieldRule">Gendarme.Rules.BadPractice.AvoidVisibleConstantFieldRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidLargeClassesRule(2.10)" target="AvoidLargeClassesRule">Gendarme.Rules.Smells.AvoidLargeClassesRule</a>
+		: 3 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidCodeDuplicatedInSiblingClassesRule(2.10)" target="AvoidCodeDuplicatedInSiblingClassesRule">Gendarme.Rules.Smells.AvoidCodeDuplicatedInSiblingClassesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidSpeculativeGeneralityRule(2.10)" target="AvoidSpeculativeGeneralityRule">Gendarme.Rules.Smells.AvoidSpeculativeGeneralityRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidLongParameterListsRule(2.10)" target="AvoidLongParameterListsRule">Gendarme.Rules.Smells.AvoidLongParameterListsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidCodeDuplicatedInSameClassRule(2.10)" target="AvoidCodeDuplicatedInSameClassRule">Gendarme.Rules.Smells.AvoidCodeDuplicatedInSameClassRule</a>
+		: 0 defects
+	
+            </li></ul></p>
+        <p><b>Method</b>:
+				<ul><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Unity.Rules.Performance.CacheComponentLookupRule(2.10)" target="CacheComponentLookupRule">Unity.Rules.Performance.CacheComponentLookupRule</a>
+		: 4 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Unity.Rules.Performance.AvoidEmptyComponentsMethodsRule(2.10)" target="AvoidEmptyComponentsMethodsRule">Unity.Rules.Performance.AvoidEmptyComponentsMethodsRule</a>
+		: 2 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Unity.Rules.Performance.AvoidUsingFindObjectInUpdateRule(2.10)" target="AvoidUsingFindObjectInUpdateRule">Unity.Rules.Performance.AvoidUsingFindObjectInUpdateRule</a>
+		: 1 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Unity.Rules.Maintainability.PrefereGenericVersionOfTheMethodRule(2.10)" target="PrefereGenericVersionOfTheMethodRule">Unity.Rules.Maintainability.PrefereGenericVersionOfTheMethodRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.CompareWithEmptyStringEfficientlyRule(2.10)" target="CompareWithEmptyStringEfficientlyRule">Gendarme.Rules.Performance.CompareWithEmptyStringEfficientlyRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.PreferCharOverloadRule(2.10)" target="PreferCharOverloadRule">Gendarme.Rules.Performance.PreferCharOverloadRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidLargeNumberOfLocalVariablesRule(2.10)" target="AvoidLargeNumberOfLocalVariablesRule">Gendarme.Rules.Performance.AvoidLargeNumberOfLocalVariablesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.UseIsOperatorRule(2.10)" target="UseIsOperatorRule">Gendarme.Rules.Performance.UseIsOperatorRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidReturningArraysOnPropertiesRule(2.10)" target="AvoidReturningArraysOnPropertiesRule">Gendarme.Rules.Performance.AvoidReturningArraysOnPropertiesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnnecessaryOverridesRule(2.10)" target="AvoidUnnecessaryOverridesRule">Gendarme.Rules.Performance.AvoidUnnecessaryOverridesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidRepetitiveCastsRule(2.10)" target="AvoidRepetitiveCastsRule">Gendarme.Rules.Performance.AvoidRepetitiveCastsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUncalledPrivateCodeRule(2.10)" target="AvoidUncalledPrivateCodeRule">Gendarme.Rules.Performance.AvoidUncalledPrivateCodeRule</a>
+		: 25 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidMethodWithLargeMaximumStackSizeRule(2.10)" target="AvoidMethodWithLargeMaximumStackSizeRule">Gendarme.Rules.Performance.AvoidMethodWithLargeMaximumStackSizeRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnusedParametersRule(2.10)" target="AvoidUnusedParametersRule">Gendarme.Rules.Performance.AvoidUnusedParametersRule</a>
+		: 1 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidConcatenatingCharsRule(2.10)" target="AvoidConcatenatingCharsRule">Gendarme.Rules.Performance.AvoidConcatenatingCharsRule</a>
+		: 1 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.UseTypeEmptyTypesRule(2.10)" target="UseTypeEmptyTypesRule">Gendarme.Rules.Performance.UseTypeEmptyTypesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnneededFieldInitializationRule(2.10)" target="AvoidUnneededFieldInitializationRule">Gendarme.Rules.Performance.AvoidUnneededFieldInitializationRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.MathMinMaxCandidateRule(2.10)" target="MathMinMaxCandidateRule">Gendarme.Rules.Performance.MathMinMaxCandidateRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.DoNotIgnoreMethodResultRule(2.10)" target="DoNotIgnoreMethodResultRule">Gendarme.Rules.Performance.DoNotIgnoreMethodResultRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.RemoveUnusedLocalVariablesRule(2.10)" target="RemoveUnusedLocalVariablesRule">Gendarme.Rules.Performance.RemoveUnusedLocalVariablesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnneededCallsOnStringRule(2.10)" target="AvoidUnneededCallsOnStringRule">Gendarme.Rules.Performance.AvoidUnneededCallsOnStringRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidTypeGetTypeForConstantStringsRule(2.10)" target="AvoidTypeGetTypeForConstantStringsRule">Gendarme.Rules.Performance.AvoidTypeGetTypeForConstantStringsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.PreferInterfaceConstraintOnGenericParameterForPrimitiveInterfaceRule(2.10)" target="PreferInterfaceConstraintOnGenericParameterForPrimitiveInterfaceRule">Gendarme.Rules.Performance.PreferInterfaceConstraintOnGenericParameterForPrimitiveInterfaceRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidLocalDataStoreSlotRule(2.10)" target="AvoidLocalDataStoreSlotRule">Gendarme.Rules.Performance.AvoidLocalDataStoreSlotRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.ReviewLinqMethodRule(2.10)" target="ReviewLinqMethodRule">Gendarme.Rules.Performance.ReviewLinqMethodRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidRepetitiveCallsToPropertiesRule(2.10)" target="AvoidRepetitiveCallsToPropertiesRule">Gendarme.Rules.Performance.AvoidRepetitiveCallsToPropertiesRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.UseStringEmptyRule(2.10)" target="UseStringEmptyRule">Gendarme.Rules.Performance.UseStringEmptyRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnneededUnboxingRule(2.10)" target="AvoidUnneededUnboxingRule">Gendarme.Rules.Performance.AvoidUnneededUnboxingRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.ConsiderUsingStopwatchRule(2.10)" target="ConsiderUsingStopwatchRule">Gendarme.Rules.Maintainability.ConsiderUsingStopwatchRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.AvoidUnnecessarySpecializationRule(2.10)" target="AvoidUnnecessarySpecializationRule">Gendarme.Rules.Maintainability.AvoidUnnecessarySpecializationRule</a>
+		: 5 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.PreferStringIsNullOrEmptyRule(2.10)" target="PreferStringIsNullOrEmptyRule">Gendarme.Rules.Maintainability.PreferStringIsNullOrEmptyRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.AvoidComplexMethodsRule(2.10)" target="AvoidComplexMethodsRule">Gendarme.Rules.Maintainability.AvoidComplexMethodsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.PreferParamsArrayForVariableArgumentsRule(2.10)" target="PreferParamsArrayForVariableArgumentsRule">Gendarme.Rules.BadPractice.PreferParamsArrayForVariableArgumentsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.PreferTryParseRule(2.10)" target="PreferTryParseRule">Gendarme.Rules.BadPractice.PreferTryParseRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.PreferEmptyInstanceOverNullRule(2.10)" target="PreferEmptyInstanceOverNullRule">Gendarme.Rules.BadPractice.PreferEmptyInstanceOverNullRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.UseFileOpenOnlyWithFileAccessRule(2.10)" target="UseFileOpenOnlyWithFileAccessRule">Gendarme.Rules.BadPractice.UseFileOpenOnlyWithFileAccessRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.GetEntryAssemblyMayReturnNullRule(2.10)" target="GetEntryAssemblyMayReturnNullRule">Gendarme.Rules.BadPractice.GetEntryAssemblyMayReturnNullRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.DoNotUseGetInterfaceToCheckAssignabilityRule(2.10)" target="DoNotUseGetInterfaceToCheckAssignabilityRule">Gendarme.Rules.BadPractice.DoNotUseGetInterfaceToCheckAssignabilityRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.CheckNewExceptionWithoutThrowingRule(2.10)" target="CheckNewExceptionWithoutThrowingRule">Gendarme.Rules.BadPractice.CheckNewExceptionWithoutThrowingRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.CheckNewThreadWithoutStartRule(2.10)" target="CheckNewThreadWithoutStartRule">Gendarme.Rules.BadPractice.CheckNewThreadWithoutStartRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.ReplaceIncompleteOddnessCheckRule(2.10)" target="ReplaceIncompleteOddnessCheckRule">Gendarme.Rules.BadPractice.ReplaceIncompleteOddnessCheckRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.DoNotUseEnumIsAssignableFromRule(2.10)" target="DoNotUseEnumIsAssignableFromRule">Gendarme.Rules.BadPractice.DoNotUseEnumIsAssignableFromRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.DisableDebuggingCodeRule(2.10)" target="DisableDebuggingCodeRule">Gendarme.Rules.BadPractice.DisableDebuggingCodeRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.AvoidCallingProblematicMethodsRule(2.10)" target="AvoidCallingProblematicMethodsRule">Gendarme.Rules.BadPractice.AvoidCallingProblematicMethodsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.CloneMethodShouldNotReturnNullRule(2.10)" target="CloneMethodShouldNotReturnNullRule">Gendarme.Rules.BadPractice.CloneMethodShouldNotReturnNullRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.BadPractice.DoNotForgetNotImplementedMethodsRule(2.10)" target="DoNotForgetNotImplementedMethodsRule">Gendarme.Rules.BadPractice.DoNotForgetNotImplementedMethodsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidMessageChainsRule(2.10)" target="AvoidMessageChainsRule">Gendarme.Rules.Smells.AvoidMessageChainsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidSwitchStatementsRule(2.10)" target="AvoidSwitchStatementsRule">Gendarme.Rules.Smells.AvoidSwitchStatementsRule</a>
+		: 0 defects
+	
+            </li><li>
+              <a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidLongMethodsRule(2.10)" target="AvoidLongMethodsRule">Gendarme.Rules.Smells.AvoidLongMethodsRule</a>
+		: 0 defects
+	
+            </li></ul></p>
+      </div></p>
+    <h1><a name="s2">Reported Defects</a></h1>
+    <p><h3>1. <a name="AvoidConcatenatingCharsRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidConcatenatingCharsRule(2.10)" target="AvoidConcatenatingCharsRule">AvoidConcatenatingCharsRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidConcatenatingCharsRule_block'); return false;">[hide]</a></h3><div id="AvoidConcatenatingCharsRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">Unneeded boxing was found for concatening a string.</p>
+        <b>Solution:</b>
+        <p class="solution">Change your code to avoid the boxing when creating your string.</p>
+        <b>1 defect(s) found:</b>
+        <p class="found severity-High" title="AvoidConcatenatingCharsRule"><b>Target:</b> System.Void ScoreKeeper::UpdateScore()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidConcatenatingCharsRule on System.Void ScoreKeeper::UpdateScore()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/ScoreKeeper.cs(≈27)<br><b>Details:</b> Type 'System.Int32' is being boxed.<br></span><a class="go-to-rule" href="#AvoidConcatenatingCharsRule">Go to AvoidConcatenatingCharsRule description</a></p>
+      </div><h3>2. <a name="AvoidEmptyComponentsMethodsRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Unity.Rules.Performance.AvoidEmptyComponentsMethodsRule(2.10)" target="AvoidEmptyComponentsMethodsRule">AvoidEmptyComponentsMethodsRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidEmptyComponentsMethodsRule_block'); return false;">[hide]</a></h3><div id="AvoidEmptyComponentsMethodsRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">Empty methods coming from MonoBehaviour (such as Start() or Update() can causes overhead at runtime, which leads to a loss of performances.</p>
+        <b>Solution:</b>
+        <p class="solution">Delete the empty methods.</p>
+        <b>2 defect(s) found:</b>
+        <p class="found severity-High" title="AvoidEmptyComponentsMethodsRule"><b>Target:</b> System.Void CollectibleObject::Start()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidEmptyComponentsMethodsRule on System.Void CollectibleObject::Start()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CollectibleObject.cs(≈7)<br><b>Details:</b> The method is empty, and can cause some performance overhead that you could get rid of.<br></span><a class="go-to-rule" href="#AvoidEmptyComponentsMethodsRule">Go to AvoidEmptyComponentsMethodsRule description</a></p>
+        <p class="found severity-High" title="AvoidEmptyComponentsMethodsRule"><b>Target:</b> System.Void CollectibleObject::Update()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidEmptyComponentsMethodsRule on System.Void CollectibleObject::Update()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CollectibleObject.cs(≈12)<br><b>Details:</b> The method is empty, and can cause some performance overhead that you could get rid of.<br></span><a class="go-to-rule" href="#AvoidEmptyComponentsMethodsRule">Go to AvoidEmptyComponentsMethodsRule description</a></p>
+      </div><h3>3. <a name="AvoidLackOfCohesionOfMethodsRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.AvoidLackOfCohesionOfMethodsRule(2.10)" target="AvoidLackOfCohesionOfMethodsRule">AvoidLackOfCohesionOfMethodsRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidLackOfCohesionOfMethodsRule_block'); return false;">[hide]</a></h3><div id="AvoidLackOfCohesionOfMethodsRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">The methods in this class lack cohesion (a higher score is better). This leads to code which is harder to understand and maintain.</p>
+        <b>Solution:</b>
+        <p class="solution">You can apply the Extract Class or Extract Subclass refactoring.</p>
+        <b>1 defect(s) found:</b>
+        <p class="found severity-Medium" title="AvoidLackOfCohesionOfMethodsRule"><b>Target:</b> enemyTestTwo<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidLackOfCohesionOfMethodsRule on enemyTestTwo"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈3)<br><b>Details:</b> Type cohesiveness : 31%<br></span><a class="go-to-rule" href="#AvoidLackOfCohesionOfMethodsRule">Go to AvoidLackOfCohesionOfMethodsRule description</a></p>
+      </div><h3>4. <a name="AvoidLargeClassesRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Smells.AvoidLargeClassesRule(2.10)" target="AvoidLargeClassesRule">AvoidLargeClassesRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidLargeClassesRule_block'); return false;">[hide]</a></h3><div id="AvoidLargeClassesRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">The class is trying to do too much.  Generally if a class is too large, duplicated code will not be far away.</p>
+        <b>Solution:</b>
+        <p class="solution">You can apply the Extract Class or Extract Subclass refactoring.</p>
+        <b>3 defect(s) found:</b>
+        <p class="found severity-Medium" title="AvoidLargeClassesRule"><b>Target:</b> MazeNavigationArray<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidLargeClassesRule on MazeNavigationArray"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/MazeNavigationArray.cs(≈3)<br><b>Details:</b> This type contains fields common prefixes: 2 fields prefixed with 'destination'.<br></span><span class="found" title="AvoidLargeClassesRule on MazeNavigationArray"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/MazeNavigationArray.cs(≈3)<br><b>Details:</b> This type contains fields common prefixes: 2 fields prefixed with 'previous'.<br></span><a class="go-to-rule" href="#AvoidLargeClassesRule">Go to AvoidLargeClassesRule description</a></p>
+        <p class="found severity-Medium" title="AvoidLargeClassesRule"><b>Target:</b> enemyAI<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidLargeClassesRule on enemyAI"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈3)<br><b>Details:</b> This type contains fields common prefixes: 4 fields prefixed with 'destination'.<br></span><a class="go-to-rule" href="#AvoidLargeClassesRule">Go to AvoidLargeClassesRule description</a></p>
+      </div><h3>5. <a name="AvoidUncalledPrivateCodeRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUncalledPrivateCodeRule(2.10)" target="AvoidUncalledPrivateCodeRule">AvoidUncalledPrivateCodeRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidUncalledPrivateCodeRule_block'); return false;">[hide]</a></h3><div id="AvoidUncalledPrivateCodeRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">This private or internal (assembly-level) member does not have callers in the assembly, is not invoked by the common language runtime, and is not invoked by a delegate.</p>
+        <b>Solution:</b>
+        <p class="solution">Remove the unused code or add code to call it.</p>
+        <b>25 defect(s) found:</b>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyTestTwo::Start()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyTestTwo::Start()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈20)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyTestTwo::OnCollisionEnter(UnityEngine.Collision)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyTestTwo::OnCollisionEnter(UnityEngine.Collision)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈27)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyTestTwo::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyTestTwo::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈35)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyTestTwo::nextDestination(UnityEngine.GameObject)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyTestTwo::nextDestination(UnityEngine.GameObject)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈43)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyTestTwo::Update()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyTestTwo::Update()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈48)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void CameraFollow::Start()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void CameraFollow::Start()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CameraFollow.cs(≈13)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void CameraFollow::FixedUpdate()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void CameraFollow::FixedUpdate()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CameraFollow.cs(≈19)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void CollectibleObject::Start()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void CollectibleObject::Start()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CollectibleObject.cs(≈7)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void CollectibleObject::Update()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void CollectibleObject::Update()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CollectibleObject.cs(≈12)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void CollectibleObject::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void CollectibleObject::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CollectibleObject.cs(≈16)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void MazeNavigationArray::Start()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void MazeNavigationArray::Start()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/MazeNavigationArray.cs(≈14)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void MazeNavigationArray::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void MazeNavigationArray::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/MazeNavigationArray.cs(≈37)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void PlayerMovement::Start()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void PlayerMovement::Start()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/PlayerMovement.cs(≈10)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void PlayerMovement::Update()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void PlayerMovement::Update()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/PlayerMovement.cs(≈15)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void ScoreKeeper::Start()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void ScoreKeeper::Start()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/ScoreKeeper.cs(≈11)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void ScoreKeeper::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void ScoreKeeper::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/ScoreKeeper.cs(≈18)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::Start()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::Start()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈18)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::fillArray0(System.String)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::fillArray0(System.String)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈28)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::fillArray1(System.String)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::fillArray1(System.String)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈31)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::fillArray2(System.String)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::fillArray2(System.String)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈34)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::fillArray3(System.String)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::fillArray3(System.String)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈37)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::OnCollisionEnter(UnityEngine.Collision)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::OnCollisionEnter(UnityEngine.Collision)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈43)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈50)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::OnCollisionExit(UnityEngine.Collision)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::OnCollisionExit(UnityEngine.Collision)"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈64)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+        <p class="found severity-High" title="AvoidUncalledPrivateCodeRule"><b>Target:</b> System.Void enemyAI::Update()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUncalledPrivateCodeRule on System.Void enemyAI::Update()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈68)<br><b>Details:</b> The private method code is not used in its declaring type.<br></span><a class="go-to-rule" href="#AvoidUncalledPrivateCodeRule">Go to AvoidUncalledPrivateCodeRule description</a></p>
+      </div><h3>6. <a name="AvoidUnnecessarySpecializationRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.AvoidUnnecessarySpecializationRule(2.10)" target="AvoidUnnecessarySpecializationRule">AvoidUnnecessarySpecializationRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidUnnecessarySpecializationRule_block'); return false;">[hide]</a></h3><div id="AvoidUnnecessarySpecializationRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">This method has a parameter whose type is more specialized than necessary. This can make it difficult to reuse the method in other contexts.</p>
+        <b>Solution:</b>
+        <p class="solution">Replace the parameter type with the most general type which will work or make use of the specifics of the formal parameter type.</p>
+        <b>5 defect(s) found:</b>
+        <p class="found severity-Medium" title="AvoidUnnecessarySpecializationRule"><b>Target:</b> System.Void enemyTestTwo::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnnecessarySpecializationRule on System.Void enemyTestTwo::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈35)<br><b>Details:</b> Parameter 'collision' could be of type 'UnityEngine.Component'.<br></span><a class="go-to-rule" href="#AvoidUnnecessarySpecializationRule">Go to AvoidUnnecessarySpecializationRule description</a></p>
+        <p class="found severity-Medium" title="AvoidUnnecessarySpecializationRule"><b>Target:</b> System.Void CollectibleObject::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnnecessarySpecializationRule on System.Void CollectibleObject::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CollectibleObject.cs(≈16)<br><b>Details:</b> Parameter 'other' could be of type 'UnityEngine.Component'.<br></span><a class="go-to-rule" href="#AvoidUnnecessarySpecializationRule">Go to AvoidUnnecessarySpecializationRule description</a></p>
+        <p class="found severity-Medium" title="AvoidUnnecessarySpecializationRule"><b>Target:</b> System.Void MazeNavigationArray::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnnecessarySpecializationRule on System.Void MazeNavigationArray::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/MazeNavigationArray.cs(≈37)<br><b>Details:</b> Parameter 'collision' could be of type 'UnityEngine.Component'.<br></span><a class="go-to-rule" href="#AvoidUnnecessarySpecializationRule">Go to AvoidUnnecessarySpecializationRule description</a></p>
+        <p class="found severity-Medium" title="AvoidUnnecessarySpecializationRule"><b>Target:</b> System.Void ScoreKeeper::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnnecessarySpecializationRule on System.Void ScoreKeeper::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/ScoreKeeper.cs(≈18)<br><b>Details:</b> Parameter 'other' could be of type 'UnityEngine.Component'.<br></span><a class="go-to-rule" href="#AvoidUnnecessarySpecializationRule">Go to AvoidUnnecessarySpecializationRule description</a></p>
+        <p class="found severity-Medium" title="AvoidUnnecessarySpecializationRule"><b>Target:</b> System.Void enemyAI::OnTriggerEnter(UnityEngine.Collider)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnnecessarySpecializationRule on System.Void enemyAI::OnTriggerEnter(UnityEngine.Collider)"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> High<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈50)<br><b>Details:</b> Parameter 'collision' could be of type 'UnityEngine.Component'.<br></span><a class="go-to-rule" href="#AvoidUnnecessarySpecializationRule">Go to AvoidUnnecessarySpecializationRule description</a></p>
+      </div><h3>7. <a name="AvoidUnusedParametersRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnusedParametersRule(2.10)" target="AvoidUnusedParametersRule">AvoidUnusedParametersRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidUnusedParametersRule_block'); return false;">[hide]</a></h3><div id="AvoidUnusedParametersRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">The method contains one or more unused parameters.</p>
+        <b>Solution:</b>
+        <p class="solution">You should remove or use the unused parameters.</p>
+        <b>1 defect(s) found:</b>
+        <p class="found severity-Medium" title="AvoidUnusedParametersRule"><b>Target:</b> System.Void enemyAI::OnCollisionExit(UnityEngine.Collision)<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnusedParametersRule on System.Void enemyAI::OnCollisionExit(UnityEngine.Collision)"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Normal<br><b>Location:</b> collision<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈64)<br><b>Details:</b> Parameter 'collision' of type 'UnityEngine.Collision' is never used in the method.<br></span><a class="go-to-rule" href="#AvoidUnusedParametersRule">Go to AvoidUnusedParametersRule description</a></p>
+      </div><h3>8. <a name="AvoidUnusedPrivateFieldsRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Performance.AvoidUnusedPrivateFieldsRule(2.10)" target="AvoidUnusedPrivateFieldsRule">AvoidUnusedPrivateFieldsRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidUnusedPrivateFieldsRule_block'); return false;">[hide]</a></h3><div id="AvoidUnusedPrivateFieldsRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">This type contains private fields which seem to be unused.</p>
+        <b>Solution:</b>
+        <p class="solution">Remove unused fields to reduce the memory required by the type or correct the use of the field.</p>
+        <b>6 defect(s) found:</b>
+        <p class="found severity-Medium" title="AvoidUnusedPrivateFieldsRule"><b>Target:</b> enemyTestTwo<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnusedPrivateFieldsRule on enemyTestTwo"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Normal<br><b>Location:</b> UnityEngine.GameObject enemyTestTwo::destination<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈3)<br></span><span class="found" title="AvoidUnusedPrivateFieldsRule on enemyTestTwo"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Normal<br><b>Location:</b> System.String enemyTestTwo::waypointName<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈3)<br></span><span class="found" title="AvoidUnusedPrivateFieldsRule on enemyTestTwo"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Normal<br><b>Location:</b> System.String enemyTestTwo::comingFrom<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈3)<br></span><a class="go-to-rule" href="#AvoidUnusedPrivateFieldsRule">Go to AvoidUnusedPrivateFieldsRule description</a></p>
+        <p class="found severity-Medium" title="AvoidUnusedPrivateFieldsRule"><b>Target:</b> MazeNavigationArray<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnusedPrivateFieldsRule on MazeNavigationArray"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Normal<br><b>Location:</b> System.String MazeNavigationArray::previousDestinationFromAI<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/MazeNavigationArray.cs(≈3)<br></span><a class="go-to-rule" href="#AvoidUnusedPrivateFieldsRule">Go to AvoidUnusedPrivateFieldsRule description</a></p>
+        <p class="found severity-Medium" title="AvoidUnusedPrivateFieldsRule"><b>Target:</b> enemyAI<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUnusedPrivateFieldsRule on enemyAI"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Normal<br><b>Location:</b> UnityEngine.Transform enemyAI::destinationTransform<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈3)<br></span><span class="found" title="AvoidUnusedPrivateFieldsRule on enemyAI"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Normal<br><b>Location:</b> UnityEngine.GameObject enemyAI::destinationObject<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈3)<br></span><a class="go-to-rule" href="#AvoidUnusedPrivateFieldsRule">Go to AvoidUnusedPrivateFieldsRule description</a></p>
+      </div><h3>9. <a name="AvoidUsingFindObjectInUpdateRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Unity.Rules.Performance.AvoidUsingFindObjectInUpdateRule(2.10)" target="AvoidUsingFindObjectInUpdateRule">AvoidUsingFindObjectInUpdateRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'AvoidUsingFindObjectInUpdateRule_block'); return false;">[hide]</a></h3><div id="AvoidUsingFindObjectInUpdateRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">Object.FindObjectOfType(), Object.FindObjectsOfType() and GameObject.Find(name) are time consuming methods. You shouldnt use them each frame, in the Update() methods</p>
+        <b>Solution:</b>
+        <p class="solution">Use those methods in Start() or Awake(), and cache a reference to the found object.</p>
+        <b>1 defect(s) found:</b>
+        <p class="found severity-Critical" title="AvoidUsingFindObjectInUpdateRule"><b>Target:</b> System.Void enemyAI::Update()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="AvoidUsingFindObjectInUpdateRule on System.Void enemyAI::Update()"><br><b>Severity:</b> Critical 
+                        <b>Confidence:</b> Total<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/enemyAI.cs(≈69)<br><b>Details:</b> This GameObject.Find() is known to cause some serious performance loss if used in Update, LateUpdate or FixedUpdate.
+Find the reference you want to lookup in Start() or Awake() instead, and cache it in a local member.<br></span><a class="go-to-rule" href="#AvoidUsingFindObjectInUpdateRule">Go to AvoidUsingFindObjectInUpdateRule description</a></p>
+      </div><h3>10. <a name="CacheComponentLookupRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Unity.Rules.Performance.CacheComponentLookupRule(2.10)" target="CacheComponentLookupRule">CacheComponentLookupRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'CacheComponentLookupRule_block'); return false;">[hide]</a></h3><div id="CacheComponentLookupRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">Recurrent components calls in update can leads to performance loss.</p>
+        <b>Solution:</b>
+        <p class="solution">Cache the component call in a local member, on Start() or Awake().</p>
+        <b>4 defect(s) found:</b>
+        <p class="found severity-High" title="CacheComponentLookupRule"><b>Target:</b> System.Void CameraFollow::FixedUpdate()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="CacheComponentLookupRule on System.Void CameraFollow::FixedUpdate()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CameraFollow.cs(≈23)<br><b>Details:</b> get_transform Component lookup could be cached.<br></span><span class="found" title="CacheComponentLookupRule on System.Void CameraFollow::FixedUpdate()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/CameraFollow.cs(≈23)<br><b>Details:</b> get_transform Component lookup could be cached.<br></span><a class="go-to-rule" href="#CacheComponentLookupRule">Go to CacheComponentLookupRule description</a></p>
+        <p class="found severity-High" title="CacheComponentLookupRule"><b>Target:</b> System.Void PlayerMovement::Update()<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="CacheComponentLookupRule on System.Void PlayerMovement::Update()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/PlayerMovement.cs(≈16)<br><b>Details:</b> get_transform Component lookup could be cached.<br></span><span class="found" title="CacheComponentLookupRule on System.Void PlayerMovement::Update()"><br><b>Severity:</b> High 
+                        <b>Confidence:</b> Normal<br><b>Location:</b> System.Void PlayerMovement::ControlPlayer()<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/Scripts/PlayerMovement.cs(≈32)<br><b>Details:</b> get_transform Component lookup could be cached.<br></span><a class="go-to-rule" href="#CacheComponentLookupRule">Go to CacheComponentLookupRule description</a></p>
+      </div><h3>11. <a name="VariableNamesShouldNotMatchFieldNamesRule"></a><a href="https://github.com/spouliot/gendarme/wiki/Gendarme.Rules.Maintainability.VariableNamesShouldNotMatchFieldNamesRule(2.10)" target="VariableNamesShouldNotMatchFieldNamesRule">VariableNamesShouldNotMatchFieldNamesRule</a> 
+<a style="font-size: 66%;" href="#" onclick="expcol(this,'VariableNamesShouldNotMatchFieldNamesRule_block'); return false;">[hide]</a></h3><div id="VariableNamesShouldNotMatchFieldNamesRule_block" style="display:block;">
+        <b>Problem:</b>
+        <p class="problem">An instance method declares a parameter or a local variable whose name matches an instance field of the declaring type.</p>
+        <b>Solution:</b>
+        <p class="solution">Rename the variable/parameter or the field.</p>
+        <b>1 defect(s) found:</b>
+        <p class="found severity-Medium" title="VariableNamesShouldNotMatchFieldNamesRule"><b>Target:</b> enemyTestTwo<br><b>Assembly:</b> Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null<br><span class="found" title="VariableNamesShouldNotMatchFieldNamesRule on enemyTestTwo"><br><b>Severity:</b> Medium 
+                        <b>Confidence:</b> Total<br><b>Location:</b> destination<br><b>Source:</b> /Users/donovanjamesguelde/3308Project/3308Project_MazeGame/Assets/SampleEnemyAISetup/scripts/enemyTestTwo.cs(≈43)<br></span><a class="go-to-rule" href="#VariableNamesShouldNotMatchFieldNamesRule">Go to VariableNamesShouldNotMatchFieldNamesRule description</a></p>
+      </div></p>
+  </body>
+</html>
