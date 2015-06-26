@@ -6,6 +6,11 @@
 !/Assets/
 !/ProjectSettings/
 !.gitignore
+!*.pdf
+!*.doc
+!*.docx
+!*.xlsx
+!*.xls
  
 # OS Stuff
 .DS_Store
