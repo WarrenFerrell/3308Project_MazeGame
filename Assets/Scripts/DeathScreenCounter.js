@@ -41,7 +41,7 @@
      if (showRemaining)
      {
      	GUI.skin.font = MyFont;
-         GUI.Label( Rect( 725, 340, Screen.width - 40, 60), text );
+         GUI.Label( Rect( 690, 290, Screen.width - 40, 60), text );
      }
  }
  
