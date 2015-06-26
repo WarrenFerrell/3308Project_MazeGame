@@ -1,4 +1,14 @@
-﻿using UnityEngine;
+﻿/**
+ * @file MazeNavigationArray.cs
+ * 
+ * @brief Creates an array of possible destinations from each array and 
+ * sends those destinations to each player that reaches the inner trigger of the maze piece
+ * 
+ * @author Warren Ferrell, Donovan Guelde
+ * 
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class MazeNavigationArray : MonoBehaviour {
@@ -12,7 +22,7 @@ public class MazeNavigationArray : MonoBehaviour {
 	public string collidingWith;
 	
 	void Start () {
-		int terrainLayerMask = 1 << 8 | 1 << 9; //ignore all objects not in Terran Layer
+		int terrainLayerMask = 1 << 8 | 1 << 9; ///ignore all objects not in Terran or Maze Layer
 		destinationList = new string[4];
 		if (Physics.Raycast(transform.position + 0.25F * Vector3.up, Vector3.forward, out pieceFound, 15, terrainLayerMask)==true && pieceFound.collider.gameObject.layer==8)
 			destinationList[0] = pieceFound.collider.gameObject.name;
