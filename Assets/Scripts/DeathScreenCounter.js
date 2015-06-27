@@ -1,39 +1,40 @@
 ﻿#pragma strict
  
+/*
+Variable: theTimer
+Holds the current time
+*/
  var theTimer : float = 0.0;
+/*
+Variable: theStartTime
+Holds the time that the timer begins at
+*/
  var theStartTime : float = 120.0;
  var showRemaining : boolean = false;
  var MyFont : Font;
- 
+
+/*
+Function: Start
+Begins the timer countdown
+*/ 
  function Start() 
  {
      theTimer = theStartTime;
  }
  
+/*
+Function: Update
+Updates the timer so that it counts down in real time 
+*/
  function Update() 
  {
      theTimer -= Time.deltaTime;
  
-     if (theTimer < 10) 
-     {
-         Debug.Log("TEN SECONDS LEFT !");
-         showRemaining = true;
-     }
- 
-     if (theTimer <= 0) 
-     {
-         Debug.Log("OUT OF TIME");
-         theTimer = 0;
-     }
- 
-     if ( Input.GetKeyUp(KeyCode.G) )
-     {
-         Debug.Log("Resetting");
-         theTimer = theStartTime;
-         showRemaining = false;
-     }
  }
- 
+/*
+Function: OnGui
+Creates the GUI object that will hold and display the timer as it counts down
+*/
  function OnGUI() 
  {
      var text : String = String.Format( "{1:00}", parseInt( theTimer / 60.0 ), parseInt( theTimer % 60.0 ) ); 

@@ -37,13 +37,14 @@ function OnMouseUp(){
 		Application.LoadLevel("StaticMaze");
 	}
 }
+
 /*
 Function: Update
 Quits the game if "Escape" key is pressed
 */
 function Update(){
 //quit game if escape key is pressed
-	if (Input.GetKey(KeyCode.Escape))
-		{ Application.Quit();
+	if (Input.GetKey(KeyCode.Escape)){
+		Application.Quit();
 	}	
 }
