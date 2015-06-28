@@ -1,16 +1,15 @@
 ﻿/*!ScoreController to be attached to player character
  * The ScoreController is used to send the player's score to the server and display highscores from the leaderbaord
  */
-
 /*
 using UnityEngine;
 using System.Collections;
 
 public class ScoreController : MonoBehaviour
 {
-	private string secretKey = "[secret key]"; //! SecretKey established to communicate with server
-	public string addScoreURL = "[addscore address]"; //!addScoreURL variable holds the address of the addscore script
-	public string highscoreURL = "[leaderboard address]"; //!highscoreURL variable holds the address of the leaderboard
+	private string secretKey = "csci"; //! SecretKey established to communicate with server
+	public string addScoreURL = "~/mitchellblock/addscore.php"; //!addScoreURL variable holds the address of the addscore script
+	public string highscoreURL = "~/mitchellblock/mazeHighScore.html"; //!highscoreURL variable holds the address of the leaderboard
 
 	/*!void Start()
 	 * Runs once to get scores and send them to the server
@@ -20,18 +19,13 @@ public class ScoreController : MonoBehaviour
 	{
 		StartCoroutine(GetScores());
 	}
-	
-	/*!PostScores (playerName, playerScore)
-	 * Runs Md5Sum script to create hash value from user name, score and secret key
-	 * Posts score to leaderboard using addscoreURL variable
-	 */
 
-/*
+
 
 	/*!string Md5Sum(stringToEncrypt)
 	 * Returns encrypted string in base 16
 	 */
-/*	
+/*
 	public string Md5Sum(string strToEncrypt)
         {
                 System.Text.UTF8Encoding ue = new System.Text.UTF8Encoding();
@@ -51,7 +45,7 @@ public class ScoreController : MonoBehaviour
 
                 return hashString.PadLeft(32, '0');
         }
-*/
+
 
 
 	/*!PostScores (playerName, playerScore)
@@ -63,7 +57,7 @@ public class ScoreController : MonoBehaviour
 	{
 		//This connects to a server side php script that will add the name and score to a MySQL DB.
 		// Supply it with a string representing the players name and the players score.
-		string hash = MD5Test.Md5Sum(name + score + secretKey);
+		string hash = Md5Sum(name + score + secretKey);
 		
 		string post_url = addScoreURL + "name=" + WWW.EscapeURL(name) + "&score=" + score + "&hash=" + hash;
 		
@@ -81,7 +75,7 @@ public class ScoreController : MonoBehaviour
 	 * GetScores()
 	 * Retrieves scores from leaderboard for display to the player
 	 */
-	/*
+/*
 	IEnumerator GetScores()
 	{
 		gameObject.guiText.text = "Loading Scores";
@@ -98,4 +92,5 @@ public class ScoreController : MonoBehaviour
 		}
 	}
 	
-}*/
+}
+*/
