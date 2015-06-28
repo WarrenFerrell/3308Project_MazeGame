@@ -14,7 +14,11 @@ public class CollectibleObject : MonoBehaviour {
 	void Update () {
 	
 	}
-	
+
+	/*!void OnTriggerEnter (Collider playerCharacter)
+	 * Destroys object if player collides with collectible object
+	 */
+
 	void OnTriggerEnter (Collider other)
 	{
 		if (other.tag == "Player") {

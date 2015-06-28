@@ -1,18 +1,32 @@
-﻿using UnityEngine;
+﻿/*!ScoreController to be attached to player character
+ * The ScoreController is used to send the player's score to the server and display highscores from the leaderbaord
+ */
+
+/*
+using UnityEngine;
 using System.Collections;
 
 public class ScoreController : MonoBehaviour
 {
-	/*private string secretKey = "mySecretKey"; // Edit this value and make sure it's the same as the one stored on the server
-	public string addScoreURL = ; //be sure to add a ? to your url
-	public string highscoreURL = ;
-	
+	private string secretKey = "mySecretKey"; //! SecretKey established to communicate with server
+	public string addScoreURL = ; //!addScoreURL variable holds the address of the addscore script
+	public string highscoreURL = ; //!highscoreURL variable holds the address of the leaderboard
+
+	/*!void Start()
+	 * Runs once to get scores and send them to the server
+	 */
+/*
 	void Start()
 	{
 		StartCoroutine(GetScores());
 	}
 	
-	// remember to use StartCoroutine when calling this function!
+	/*!PostScores (playerName, playerScore)
+	 * Runs Md5Sum script to create hash value from user name, score and secret key
+	 * Posts score to leaderboard using addscoreURL variable
+	 */
+
+/*
 	IEnumerator PostScores(string name, int score)
 	{
 		//This connects to a server side php script that will add the name and score to a MySQL DB.
@@ -31,8 +45,11 @@ public class ScoreController : MonoBehaviour
 		}
 	}
 	
-	// Get the scores from the MySQL DB to display in a GUIText.
-	// remember to use StartCoroutine when calling this function!
+	/*!
+	 * GetScores()
+	 * Retrieves scores from leaderboard for display to the player
+	 */
+	/*
 	IEnumerator GetScores()
 	{
 		gameObject.guiText.text = "Loading Scores";
@@ -47,6 +64,6 @@ public class ScoreController : MonoBehaviour
 		{
 			gameObject.guiText.text = hs_get.text; // this is a GUIText that will display the scores in game.
 		}
-	}*/
+	}
 	
-}
+}*/

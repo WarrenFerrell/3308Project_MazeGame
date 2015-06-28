@@ -1,5 +1,5 @@
 ﻿/*!ScoreKeeper added to player character
- * Keeps score of all collectible objects picked up by player
+ * Keeps score of all collectible objects picked up by player, and displays score
  */
 
 using UnityEngine;
@@ -8,7 +8,7 @@ using System.Collections;
 public class ScoreKeeper : MonoBehaviour {
 
 	public static int Score; //!Score variable to increment score
-	public CollectibleObject pickupItem;
+	//public CollectibleObject pickupItem;
 	public GUIText scoreText; //!Text from empty game object to display score
 	
 	void Start() //!Initializes score to zero and calls UpdateScore() to display score
@@ -17,8 +17,12 @@ public class ScoreKeeper : MonoBehaviour {
 		UpdateScore ();
 
 	}
-	
-	void OnTriggerEnter (Collider other) //!Function triggers score increase
+
+	/*!void OnTriggerEnter (Collider collidingObject)
+	 * Checks for the collision object tag and increments scoreb based on the collectible object's tag
+	 */
+
+	void OnTriggerEnter (Collider other)
 	{
 		if (other.tag == "CollectObject") { //!Adds 10 upon collision with CollectObject collectible object
 			Score += 10;
@@ -33,6 +37,10 @@ public class ScoreKeeper : MonoBehaviour {
 			UpdateScore ();
 		}
 	}
+
+	/*!void UpdateScore()
+	 * Updates the scoreText object to print "Score:" and the value of the Score variable
+	 */
 
 	void UpdateScore()
 	{
