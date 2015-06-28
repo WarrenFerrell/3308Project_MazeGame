@@ -5,6 +5,7 @@
 # Inverse ignore some stuff
 !/Assets/
 !/ProjectSettings/
+!/Script_Documentation/
 !.gitignore
 !*.pdf
 !*.doc
