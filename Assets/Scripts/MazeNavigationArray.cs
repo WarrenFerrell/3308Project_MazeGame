@@ -41,9 +41,7 @@ public class MazeNavigationArray : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collision)
 	{	
-		//collidingWith = collision.gameObject;
 
-		//if (previousDestination = gameObject)
 		{
 			collision.SendMessage("fillArray0",destinationList[0], SendMessageOptions.DontRequireReceiver);
 			collision.SendMessage("fillArray1",destinationList[1], SendMessageOptions.DontRequireReceiver);
