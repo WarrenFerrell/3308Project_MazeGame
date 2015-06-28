@@ -1,0 +1,4 @@
+Run create_score_database.sql on MySQL database
+Give addscore.php and display.php the database name, address, user, and password
+Adjust secretKey in addscore.php to be the same in ScoreController in Unity
+Add ScoreController to player character
