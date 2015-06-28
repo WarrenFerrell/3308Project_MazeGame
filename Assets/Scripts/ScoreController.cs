@@ -8,9 +8,9 @@ using System.Collections;
 
 public class ScoreController : MonoBehaviour
 {
-	private string secretKey = "mySecretKey"; //! SecretKey established to communicate with server
-	public string addScoreURL = ; //!addScoreURL variable holds the address of the addscore script
-	public string highscoreURL = ; //!highscoreURL variable holds the address of the leaderboard
+	private string secretKey = "[secret key]"; //! SecretKey established to communicate with server
+	public string addScoreURL = "[addscore address]"; //!addScoreURL variable holds the address of the addscore script
+	public string highscoreURL = "[leaderboard address]"; //!highscoreURL variable holds the address of the leaderboard
 
 	/*!void Start()
 	 * Runs once to get scores and send them to the server
@@ -26,6 +26,38 @@ public class ScoreController : MonoBehaviour
 	 * Posts score to leaderboard using addscoreURL variable
 	 */
 
+/*
+
+	/*!string Md5Sum(stringToEncrypt)
+	 * Returns encrypted string in base 16
+	 */
+/*	
+	public string Md5Sum(string strToEncrypt)
+        {
+                System.Text.UTF8Encoding ue = new System.Text.UTF8Encoding();
+                byte[] bytes = ue.GetBytes(strToEncrypt);
+
+                // encrypt bytes
+                System.Security.Cryptography.MD5CryptoServiceProvider md5 = new System.Security.Cryptography.MD5CryptoServiceProvider();
+                byte[] hashBytes = md5.ComputeHash(bytes);
+
+                // Convert the encrypted bytes back to a string (base 16)
+                string hashString = "";
+
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                        hashString += System.Convert.ToString(hashBytes[i], 16).PadLeft(2, '0');
+                }
+
+                return hashString.PadLeft(32, '0');
+        }
+*/
+
+
+	/*!PostScores (playerName, playerScore)
+	 * Runs Md5Sum script to create hash value from user name, score and secret key
+	 * Posts score to leaderboard using addscoreURL variable
+	 */
 /*
 	IEnumerator PostScores(string name, int score)
 	{
