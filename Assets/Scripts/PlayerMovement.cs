@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	
 	void Update () {
-		transform.Rotate(0,Input.GetAxis("Horizontal")*180*Time.deltaTime,0);
+		transform.Rotate(0,Input.acceleration.x*180*Time.deltaTime,0);
 		//		transform.forward;
 		ControlPlayer();
 	}

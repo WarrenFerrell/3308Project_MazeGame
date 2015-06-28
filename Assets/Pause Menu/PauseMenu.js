@@ -50,10 +50,10 @@ GUI.skin.button.font = pauseMenuFont;
 		
 		
 		//Make a background box
-		GUI.Box(Rect(Screen.width /2 - 100,Screen.height /2 - 100,250,200), "Pause Menu");
+		GUI.Box(Rect(Screen.width /2 - 100,Screen.height /2 - 100,500,400), "Pause Menu");
 		
 		//Make Main Menu button
-		if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2,250,50), "Main Menu")){
+		if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2,500,100), "Main Menu")){
 			Application.LoadLevel(mainMenuSceneName);
 			
 			
@@ -61,14 +61,14 @@ GUI.skin.button.font = pauseMenuFont;
 		
 
 		//Make quit game button
-		if (GUI.Button (Rect (Screen.width /2 - 100,Screen.height /2 + 50 ,250,50), "Quit Game")){
+		if (GUI.Button (Rect (Screen.width /2 - 100,Screen.height /2 + 50 ,500,100), "Quit Game")){
 			
 			Application.Quit();
 			
 			
 		}
 		//Make resume game
-		if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2 - 50,250,50), "Resume Game")){
+		if(GUI.Button(Rect(Screen.width /2 - 100,Screen.height /2 - 50,500,100), "Resume Game")){
 			
 			//unpause the game
 			pauseEnabled = false;
