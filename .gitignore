@@ -12,6 +12,7 @@
 !*.docx
 !*.xlsx
 !*.xls
+!/executables/
  
 # OS Stuff
 .DS_Store
