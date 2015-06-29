@@ -42,7 +42,7 @@ Creates the GUI object that will hold and display the timer as it counts down
      if (showRemaining)
      {
      	GUI.skin.font = MyFont;
-         GUI.Label( Rect( 690, 290, Screen.width - 40, 60), text );
+         GUI.Label( Rect( Screen.width/1.31, Screen.height/1.45, Screen.width - 40, 60), text );
      }
  }
  

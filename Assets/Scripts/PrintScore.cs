@@ -26,4 +26,9 @@ public class PrintScore : MonoBehaviour {
 	
 	}
 
+	void OnGUI()
+	{
+		GUI.Label (new Rect (Screen.width-Screen.width/4, Screen.height/2, 100, 100), "" + ScoreKeeper.Score);
+	}
+
 }
