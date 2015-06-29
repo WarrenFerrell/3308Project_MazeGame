@@ -8,8 +8,8 @@ The "Script_Documentation" folder contains the documentation on the scripts used
 # Running the Game in Unity development mode
 Download Unity3D, clone the repository, then open the project in Unity. Click "Play" to run the game as is
 #
-#Running the Game through MazeGame.exe
-Simply open the file MazeGame.exe that is located in the Github repo to launch the game outside of the unity development studio.
+#Running the Game through Windows or OS X executable
+Download the folder 'executables' and simply double click on the relevant executable file for your operating system.
 #
 #Project Script Documentation
 The project documentation files are located in the "Script_Documentation" folder which is located inside the main project directory.
