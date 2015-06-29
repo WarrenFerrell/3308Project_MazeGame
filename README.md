@@ -4,6 +4,7 @@
 The various files needed for each requirements phase of the project are located in the main project directory.
 The "Assets","Library", "ProjectSettings", and "DatabaseScripts" folders contain all the unity files and scripts used by our project
 The "Script_Documentation" folder contains the documentation on the scripts used by our game.
+The 'executables' folder contains executable files for OS X and Windows, as well as all folders and files necessary for program execution.
 #
 # Running the Game in Unity development mode
 Download Unity3D, clone the repository, then open the project in Unity. Click "Play" to run the game as is
