@@ -372,12 +372,12 @@ GUIText:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 783787158}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
-  m_Text: 
+  m_Text: doba
   m_Anchor: 2
-  m_Alignment: 0
-  m_PixelOffset: {x: 840, y: 740}
+  m_Alignment: 1
+  m_PixelOffset: {x: 800, y: 740}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 0}
