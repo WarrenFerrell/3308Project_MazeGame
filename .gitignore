@@ -8,6 +8,8 @@
 !/Script_Documentation/
 !.gitignore
 !*.pdf
+!*.mov
+!*.MOV
 !*.doc
 !*.docx
 !*.xlsx
