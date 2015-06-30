@@ -1,4 +1,6 @@
 # Maze Game
+MazeGame is a maze crawling game for Android and windows created in Unity.
+In the game the player takes control of a dark cat navigating through a maze picking up boxes. The player must avoid randomly patroling dogs and find all the pickups to win the game or claim a new high score.
 # 
 #Repo Organization
 The various files needed for each requirements phase of the project are located in the main project directory.
